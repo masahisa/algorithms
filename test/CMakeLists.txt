@@ -7,10 +7,12 @@ set(CPPUTEST_LDFLGAS CppUTest CppUTestExt)
 add_executable(
     run_all_tests
     "run_all_tests.cpp"
+    "test_insertion_sort.cpp"
 )
 
 # target link libraries
 target_link_libraries(
     run_all_tests
+    insertion_sort
     ${CPPUTEST_LDFLGAS}
 )
