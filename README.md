@@ -37,3 +37,7 @@ $ cmake ..
 $ make
 $ ctest -V
 ```
+
+## References
+
+Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, [*Introduction to Algorithms, Third Edition*](https://mitpress.mit.edu/books/introduction-algorithms-third-edition), The MIT Press, 2009.
