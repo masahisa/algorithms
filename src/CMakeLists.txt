@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 # add library
 add_library(insertion_sort STATIC "insertion_sort.cpp")
+add_library(linear_search STATIC "linear_search.cpp")
 
 # add executable
 add_executable(
@@ -13,4 +14,5 @@ add_executable(
 target_link_libraries(
     ${PROJECT_NAME}
     insertion_sort
+    linear_search
 )

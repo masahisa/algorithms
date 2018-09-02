@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 # project name
 project(algorithms)
 
-# default make option
+# cmake option
 set(CMAKE_CXX_FLAGS "-Wall -std=c++14")
 set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g -coverage")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")

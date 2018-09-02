@@ -8,11 +8,13 @@ add_executable(
     run_all_tests
     "run_all_tests.cpp"
     "test_insertion_sort.cpp"
+    "test_linear_search.cpp"
 )
 
 # target link libraries
 target_link_libraries(
     run_all_tests
     insertion_sort
+    linear_search
     ${CPPUTEST_LDFLGAS}
 )
