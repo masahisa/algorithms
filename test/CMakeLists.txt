@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
 
-# make option for test
-set(CMAKE_CXX_FLAGS "-Wall -O3 -coverage -std=c++14")
-
 # LD_LIBRARY_PATH
 set(CPPUTEST_LDFLGAS CppUTest CppUTestExt)
 
