@@ -3,4 +3,4 @@
 
 int linear_search(int* a, int size, int value);
 
-#endif
+#endif // LINEAR_SEARCH_H
