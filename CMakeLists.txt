@@ -31,5 +31,8 @@ add_test(
     COMMAND $<TARGET_FILE:run_all_tests>
 )
 
-# add doc subdirectoris
+# add doc subdirectories
 add_subdirectory(doc)
+
+# add cov subdirectories
+add_subdirectory(cov)
