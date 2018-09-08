@@ -11,6 +11,10 @@ algorithms/
     CMakeLists.txt
     bin/
     build/
+    doc/
+        CMakeLists.txt
+        Doxyfile.in
+        doxygen/
     include/
     lib/
     src/
@@ -23,6 +27,8 @@ algorithms/
 
 `bin`: the output directory of executables  
 `build`: the building directory  
+`doc`: the document directory  
+`doc/doxygen`: the output directory of doxygen  
 `include`: header files of the project  
 `lib`: the output directory of shared libraries and archives  
 `src`: source files of the project  
@@ -35,6 +41,7 @@ $ mkdir build
 $ cd build
 $ cmake ..
 $ make
+$ make doc
 $ ctest -V
 ```
 

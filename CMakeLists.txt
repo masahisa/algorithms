@@ -30,3 +30,6 @@ add_test(
     NAME all_tests
     COMMAND $<TARGET_FILE:run_all_tests>
 )
+
+# add doc subdirectoris
+add_subdirectory(doc)
