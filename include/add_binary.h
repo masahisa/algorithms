@@ -8,6 +8,7 @@
  * @param in2 the second input array consists of binary value {0, 1}
  * @param out the sum of two input arrays, the size of the out is size + 1
  * @param size the size of input arrays, in1 and in2
+ * @detail Exercises 2.1-4
  */
 void add_binary(int* in1, int* in2, int* out, int size);
 
