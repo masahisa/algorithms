@@ -8,6 +8,7 @@ add_executable(
     run_all_tests
     "run_all_tests.cpp"
     "test_add_binary.cpp"
+    "test_binary_search.cpp"
     "test_insertion_sort.cpp"
     "test_linear_search.cpp"
     "test_merge_sort.cpp"
@@ -18,6 +19,7 @@ add_executable(
 target_link_libraries(
     run_all_tests
     add_binary
+    binary_search
     insertion_sort
     linear_search
     merge_sort
