@@ -10,6 +10,7 @@ add_executable(
     "test_add_binary.cpp"
     "test_insertion_sort.cpp"
     "test_linear_search.cpp"
+    "test_merge_sort.cpp"
     "test_selection_sort.cpp"
 )
 
@@ -19,6 +20,7 @@ target_link_libraries(
     add_binary
     insertion_sort
     linear_search
+    merge_sort
     selection_sort
     ${CPPUTEST_LDFLGAS}
 )

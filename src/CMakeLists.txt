@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 add_library(add_binary STATIC "add_binary.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
+add_library(merge_sort STATIC "merge_sort.cpp")
 add_library(selection_sort STATIC "selection_sort.cpp")
 
 # add executable
@@ -18,5 +19,6 @@ target_link_libraries(
     add_binary
     insertion_sort
     linear_search
+    merge_sort
     selection_sort
 )
