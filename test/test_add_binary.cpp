@@ -21,4 +21,4 @@ TEST(add_binary, iterative)
 {
     add_binary(a, b, c, size);
     MEMCMP_EQUAL(expected, c, (size + 1) * sizeof(int));
-};
+}

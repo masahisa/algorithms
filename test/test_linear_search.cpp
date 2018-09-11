@@ -16,9 +16,9 @@ TEST_GROUP(linear_search)
 TEST(linear_search, found)
 {
     CHECK_EQUAL(2, linear_search(data, size, -5));
-};
+}
 
 TEST(linear_search, not_found)
 {
     CHECK_EQUAL(-1, linear_search(data, size, 10));
-};
+}

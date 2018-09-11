@@ -26,13 +26,13 @@ TEST(insertion_sort, iterative)
 {
     insertion_sort(actual, size);
     MEMCMP_EQUAL(expected, actual, size * sizeof(int));
-};
+}
 
 TEST(insertion_sort, lower)
 {
     insertion_sort_lower(actual, size);
     MEMCMP_EQUAL(expected_lower, actual, size * sizeof(int));
-};
+}
 
 TEST(insertion_sort, recursive)
 {

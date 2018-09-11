@@ -23,4 +23,4 @@ TEST(selection_sort, iterative)
 {
     selection_sort(actual, size);
     MEMCMP_EQUAL(expected, actual, size * sizeof(int));
-};
+}
