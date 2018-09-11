@@ -21,8 +21,8 @@ void insertion_sort_lower(int* a, int size);
  * @fn void insertion_sort_recursive(int* a, int first, int last)
  * @brief sort array a by recursive insertion sort
  * @param a the input array
- * @param first the start index of array
- * @param last the end index of array
+ * @param first the first index of array
+ * @param last the last index of array
  */
 void insertion_sort_recursive(int* a, int first, int last);
 
