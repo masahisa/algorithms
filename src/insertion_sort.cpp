@@ -1,6 +1,6 @@
 #include "insertion_sort.h"
 
-void insertion_sort(int* a, int size)
+void iterative_insertion_sort(int* a, int size)
 {
     for(int j = 1; j < size; j++){
         int key = a[j];
@@ -13,7 +13,7 @@ void insertion_sort(int* a, int size)
     }
 }
 
-void insertion_sort_lower(int* a, int size)
+void iterative_insertion_sort_lower(int* a, int size)
 {
     for(int j = 1; j < size; j++){
         int key = a[j];
@@ -26,12 +26,12 @@ void insertion_sort_lower(int* a, int size)
     }
 }
 
-void insertion_sort_recursive(int* a, int first, int last)
+void recursive_insertion_sort(int* a, int first, int last)
 {
     if(first == last){
         return;
     }
-    insertion_sort_recursive(a, first, last - 1);
+    recursive_insertion_sort(a, first, last - 1);
     int key = a[last];
     int i = last - 1;
     while(i >= 0 && a[i] > key){

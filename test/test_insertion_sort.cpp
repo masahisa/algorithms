@@ -24,18 +24,18 @@ TEST_GROUP(insertion_sort)
 
 TEST(insertion_sort, iterative)
 {
-    insertion_sort(actual, size);
+    iterative_insertion_sort(actual, size);
     MEMCMP_EQUAL(expected, actual, size * sizeof(int));
 }
 
-TEST(insertion_sort, lower)
+TEST(insertion_sort, iterative_lower)
 {
-    insertion_sort_lower(actual, size);
+    iterative_insertion_sort_lower(actual, size);
     MEMCMP_EQUAL(expected_lower, actual, size * sizeof(int));
 }
 
 TEST(insertion_sort, recursive)
 {
-    insertion_sort_recursive(actual, 0, size - 1);
+    recursive_insertion_sort(actual, 0, size - 1);
     MEMCMP_EQUAL(expected, actual, size * sizeof(int));
 }
