@@ -5,6 +5,7 @@ add_library(add_binary STATIC "add_binary.cpp")
 add_library(binary_insertion_sort STATIC "binary_insertion_sort.cpp")
 add_library(binary_search STATIC "binary_search.cpp")
 add_library(find_sum_pair STATIC "find_sum_pair.cpp")
+add_library(hybrid_sort STATIC "hybrid_sort.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
@@ -23,6 +24,7 @@ target_link_libraries(
     binary_insertion_sort
     binary_search
     find_sum_pair
+    hybrid_sort
     insertion_sort
     linear_search
     merge_sort

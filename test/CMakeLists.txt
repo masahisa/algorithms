@@ -11,6 +11,7 @@ add_executable(
     "test_binary_insertion_sort.cpp"
     "test_binary_search.cpp"
     "test_find_sum_pair.cpp"
+    "test_hybrid_sort.cpp"
     "test_insertion_sort.cpp"
     "test_linear_search.cpp"
     "test_merge_sort.cpp"
@@ -24,6 +25,7 @@ target_link_libraries(
     binary_insertion_sort
     binary_search
     find_sum_pair
+    hybrid_sort
     insertion_sort
     linear_search
     merge_sort
