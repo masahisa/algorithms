@@ -3,7 +3,7 @@
 
 /**
  * @fn int linear_search(int* a, int size, int value)
- * @brief search the element that equals to value by linear search
+ * @brief search the element that equals to value by linear search in O(n) time
  * @param a the input array
  * @param size the size of array
  * @param value the searching value

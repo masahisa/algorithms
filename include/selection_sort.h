@@ -3,7 +3,7 @@
 
 /**
  * @fn void selection_sort(int* a, int size)
- * @brief sort array a by selection sort
+ * @brief sort array a by selection sort in O(n^2) time
  * @param a the input array
  * @param size the size of array
  */

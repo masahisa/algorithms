@@ -4,7 +4,7 @@
 /**
  * @fn void insertion_sort_on_small_arrays_in_merge_sort(int*a, int first, int last, int threshold)
  * @brief use insertion sort with in merge sort when subproblems become sufficiently small to coarsen the leaves.\n
- *        a modofication to merge sort in which n/k sublists of length k are sorted using insertion sort and then merged the standard merging mechanism.\n
+ *        a modofication to merge sort in which n/k sublists of length k are sorted using insertion sort and then merged the standard merging mechanism in O(nk + nlg(n/k)).\n
  *        Problem 2-1
  * @param a the input array
  * @param first the first index of array
