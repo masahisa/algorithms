@@ -6,7 +6,7 @@
  * @brief calculate polynomial by Horner's rule in O(n) time \n
  *        P(x) = sigma(k=0 to n) a[k] * x^k \n
  *             = a[0] + x(a[1] + x(a[2] + ... + x(a[n - 1] + xa[n]) ... )) \n
- *        Problem 2-3
+ *        Problem 2-3 Correctness of Horner's rule
  * @param a the input array
  * @param size the size of array
  * @param x polinomial variable x

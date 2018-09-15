@@ -14,7 +14,8 @@ int merge_inversions(int* a, int first, int middle, int last);
 /**
  * @fn int count_inversions(int* a, int first, int last)
  * @brief count inversions by merge mechanism in O(nlgn) time \n
- *        if i < j and a[i] > a[j], then the pair (i, j) is called an inversion of a
+ *        if i < j and a[i] > a[j], then the pair (i, j) is called an inversion of a \n
+ *        Problem 2-4 Inversions
  * @param a the input array
  * @param first the first index of array
  * @param last the last index of array
