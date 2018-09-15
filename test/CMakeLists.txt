@@ -11,6 +11,7 @@ add_executable(
     "test_binary_insertion_sort.cpp"
     "test_binary_search.cpp"
     "test_bubble_sort.cpp"
+    "test_count_inversions.cpp"
     "test_find_sum_pair.cpp"
     "test_horners_rule.cpp"
     "test_hybrid_sort.cpp"
@@ -27,6 +28,7 @@ target_link_libraries(
     binary_insertion_sort
     binary_search
     bubble_sort
+    count_inversions
     find_sum_pair
     horners_rule
     hybrid_sort
