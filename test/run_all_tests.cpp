@@ -6,6 +6,7 @@ IMPORT_TEST_GROUP(binary_insertion_sort);
 IMPORT_TEST_GROUP(binary_search);
 IMPORT_TEST_GROUP(bubble_sort);
 IMPORT_TEST_GROUP(find_sum_pair);
+IMPORT_TEST_GROUP(horners_rule);
 IMPORT_TEST_GROUP(hybrid_sort);
 IMPORT_TEST_GROUP(insertion_sort);
 IMPORT_TEST_GROUP(linear_search);
