@@ -9,7 +9,7 @@
  *        Problem 2-3
  * @param a the input array
  * @param size the size of array
- * @param x polinominal variable x
+ * @param x polinomial variable x
  */
 int horners_rule(int* a, int size, int x);
 
@@ -20,7 +20,7 @@ int horners_rule(int* a, int size, int x);
  *             = a[0] + a[1]x + a[2]x^2 + ... + a[n]x^n \n
  * @param a the input array
  * @param size the size of array
- * @param x polinominal variable x
+ * @param x polinomial variable x
  */
 int calculate_polynomial_bruteforce(int* a, int size, int x);
 
