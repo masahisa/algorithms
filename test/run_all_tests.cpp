@@ -12,8 +12,9 @@ IMPORT_TEST_GROUP(horners_rule);
 IMPORT_TEST_GROUP(hybrid_sort);
 IMPORT_TEST_GROUP(insertion_sort);
 IMPORT_TEST_GROUP(linear_search);
-IMPORT_TEST_GROUP(selection_sort);
 IMPORT_TEST_GROUP(merge_sort);
+IMPORT_TEST_GROUP(selection_sort);
+IMPORT_TEST_GROUP(square_matrix_multiply);
 
 int main(int argc, char** argv)
 {

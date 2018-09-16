@@ -14,6 +14,7 @@ add_library(insertion_sort STATIC "insertion_sort.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
 add_library(selection_sort STATIC "selection_sort.cpp")
+add_library(square_matrix_multiply STATIC "square_matrix_multiply.cpp")
 
 # add executable
 add_executable(
@@ -37,4 +38,5 @@ target_link_libraries(
     linear_search
     merge_sort
     selection_sort
+    square_matrix_multiply
 )

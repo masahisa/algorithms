@@ -20,6 +20,7 @@ add_executable(
     "test_linear_search.cpp"
     "test_merge_sort.cpp"
     "test_selection_sort.cpp"
+    "test_square_matrix_multiply.cpp"
 )
 
 # target link libraries
@@ -38,5 +39,6 @@ target_link_libraries(
     linear_search
     merge_sort
     selection_sort
+    square_matrix_multiply
     ${CPPUTEST_LDFLGAS}
 )
