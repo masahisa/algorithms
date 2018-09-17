@@ -19,6 +19,7 @@ add_executable(
     "test_insertion_sort.cpp"
     "test_linear_search.cpp"
     "test_merge_sort.cpp"
+    "test_randomization.cpp"
     "test_selection_sort.cpp"
     "test_square_matrix_multiply.cpp"
 )
@@ -38,6 +39,7 @@ target_link_libraries(
     insertion_sort
     linear_search
     merge_sort
+    randomization
     selection_sort
     square_matrix_multiply
     ${CPPUTEST_LDFLGAS}
