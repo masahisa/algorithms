@@ -14,6 +14,7 @@ add_executable(
     "test_count_inversions.cpp"
     "test_find_maximum_subarray.cpp"
     "test_find_sum_pair.cpp"
+    "test_heap_sort.cpp"
     "test_horners_rule.cpp"
     "test_hybrid_sort.cpp"
     "test_insertion_sort.cpp"
@@ -34,6 +35,7 @@ target_link_libraries(
     count_inversions
     find_maximum_subarray
     find_sum_pair
+    heap_sort
     horners_rule
     hybrid_sort
     insertion_sort
