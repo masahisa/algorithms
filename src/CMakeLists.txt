@@ -14,6 +14,7 @@ add_library(hybrid_sort STATIC "hybrid_sort.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
+add_library(priority_queue STATIC "priority_queue.cpp")
 add_library(randomization STATIC "randomization.cpp")
 add_library(selection_sort STATIC "selection_sort.cpp")
 add_library(square_matrix_multiply STATIC "square_matrix_multiply.cpp")
@@ -40,6 +41,7 @@ target_link_libraries(
     insertion_sort
     linear_search
     merge_sort
+    priority_queue
     randomization
     selection_sort
     square_matrix_multiply
