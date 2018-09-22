@@ -1,4 +1,5 @@
 #include "heap_sort.h"
+#include "priority_queue.h"
 #include <utility>
 
 int heap_parent(int index)
@@ -69,6 +70,14 @@ void build_max_heap_iterative(int* a, int size, int* heap_size)
     *heap_size = size;
     for(int i = heap_parent(*heap_size); i >= 0; i--){
         max_heapify_iterative(a, i, *heap_size);
+    }
+}
+
+void build_max_heap_by_insert(int* a, int size, int* heap_size)
+{
+    *heap_size = 1;
+    for(int i = 1; i < size; i++){
+        max_heap_insert(a, a[i], heap_size);
     }
 }
 
@@ -147,6 +156,14 @@ void build_min_heap_iterative(int* a, int size, int* heap_size)
     *heap_size = size;
     for(int i = heap_parent(*heap_size); i >= 0; i--){
         min_heapify_iterative(a, i, *heap_size);
+    }
+}
+
+void build_min_heap_by_insert(int* a, int size, int* heap_size)
+{
+    *heap_size = 1;
+    for(int i = 1; i < size; i++){
+        min_heap_insert(a, a[i], heap_size);
     }
 }
 

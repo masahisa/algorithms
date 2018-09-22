@@ -62,6 +62,15 @@ void build_max_heap(int* a, int size, int* heap_size);
 void build_max_heap_iterative(int* a, int size, int* heap_size);
 
 /**
+ * @fn void build_max_heap_by_insert(int* a, int heap_size)
+ * @brief build max heap with insert in O(nlgn) time
+ * @param a the input array
+ * @param size the size of array
+ * @param heap_size the size of heap
+ */
+void build_max_heap_by_insert(int* a, int size, int* heap_size);
+
+/**
  * @fn void heap_sort(int* a, int heap_size)
  * @brief sort array a by heap sort recursively in O(nlgn) time
  * @param a the input array
@@ -112,6 +121,15 @@ void build_min_heap(int* a, int size, int* heap_size);
  * @param heap_size the size of heap
  */
 void build_min_heap_iterative(int* a, int size, int* heap_size);
+
+/**
+ * @fn void build_min_heap_by_insert(int* a, int heap_size)
+ * @brief build min heap with insert in O(nlgn) time
+ * @param a the input array
+ * @param size the size of array
+ * @param heap_size the size of heap
+ */
+void build_min_heap_by_insert(int* a, int size, int* heap_size);
 
 /**
  * @fn void heap_sort_lower(int* a, int heap_size)
