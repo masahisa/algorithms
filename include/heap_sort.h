@@ -47,33 +47,35 @@ void max_heapify_iterative(int* a, int index, int heap_size);
  * @fn void build_max_heap(int* a, int heap_size)
  * @brief build max heap with max_heapify in O(n) time
  * @param a the input array
- * @param heap_size the size of array
+ * @param size the size of array
+ * @param heap_size the size of heap
  */
-void build_max_heap(int* a, int heap_size);
+void build_max_heap(int* a, int size, int* heap_size);
 
 /**
  * @fn void build_max_heap_iterative(int* a, int heap_size)
  * @brief build max heap with max_heapify_iterative in O(n) time
  * @param a the input array
- * @param heap_size the size of array
+ * @param size the size of array
+ * @param heap_size the size of heap
  */
-void build_max_heap_iterative(int* a, int heap_size);
+void build_max_heap_iterative(int* a, int size, int* heap_size);
 
 /**
  * @fn void heap_sort(int* a, int heap_size)
  * @brief sort array a by heap sort recursively in O(nlgn) time
  * @param a the input array
- * @param heap_size the size of array
+ * @param size the size of array
  */
-void heap_sort(int* a, int heap_size);
+void heap_sort(int* a, int size);
 
 /**
  * @fn void heap_sort_iterative(int* a, int heap_size)
  * @brief sort array a by heap sort iteratively in O(nlgn) time
  * @param a the input array
- * @param heap_size the size of array
+ * @param size the size of array
  */
-void heap_sort_iterative(int* a, int heap_size);
+void heap_sort_iterative(int* a, int size);
 
 /**
  * @fn void min_heapify(int* a, int index, int heap_size)
@@ -97,32 +99,34 @@ void min_heapify_iterative(int* a, int index, int heap_size);
  * @fn void build_min_heap(int* a, int heap_size)
  * @brief build min heap with min_heapify in O(n) time
  * @param a the input array
- * @param heap_size the size of array
+ * @param size the size of array
+ * @param heap_size the size of heap
  */
-void build_min_heap(int* a, int heap_size);
+void build_min_heap(int* a, int size, int* heap_size);
 
 /**
  * @fn void build_min_heap_iterative(int* a, int heap_size)
  * @brief build min heap with min_heapify_iterative in O(n) time
  * @param a the input array
- * @param heap_size the size of array
+ * @param size the size of array
+ * @param heap_size the size of heap
  */
-void build_min_heap_iterative(int* a, int heap_size);
+void build_min_heap_iterative(int* a, int size, int* heap_size);
 
 /**
  * @fn void heap_sort_lower(int* a, int heap_size)
  * @brief sort array a in decreasing order by heap sort recursively in O(nlgn) time
  * @param a the input array
- * @param heap_size the size of array
+ * @param size the size of array
  */
-void heap_sort_lower(int* a, int heap_size);
+void heap_sort_lower(int* a, int size);
 
 /**
  * @fn void heap_sort_iterative_lower(int* a, int heap_size)
  * @brief sort array a in decreasing order by heap sort iteratively in O(nlgn) time
  * @param a the input array
- * @param heap_size the size of array
+ * @param size the size of array
  */
-void heap_sort_iterative_lower(int* a, int heap_size);
+void heap_sort_iterative_lower(int* a, int size);
 
 #endif // HEAP_SORT_H

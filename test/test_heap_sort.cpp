@@ -65,14 +65,14 @@ TEST(heap_sort, max_heapify_iterative)
 TEST(heap_sort, build_max_heap)
 {
     int expected_heap[size] = {16, 14, 10, 8, 7, 9, 3, 2, 4, 1};
-    build_max_heap(actual, heap_size);
+    build_max_heap(actual, heap_size, &heap_size);
     MEMCMP_EQUAL(expected_heap, actual, heap_size * sizeof(int));
 }
 
 TEST(heap_sort, build_max_heap_iterative)
 {
     int expected_heap[size] = {16, 14, 10, 8, 7, 9, 3, 2, 4, 1};
-    build_max_heap_iterative(actual, heap_size);
+    build_max_heap_iterative(actual, heap_size, &heap_size);
     MEMCMP_EQUAL(expected_heap, actual, heap_size * sizeof(int));
 }
 
@@ -107,14 +107,14 @@ TEST(heap_sort, min_heapify_iterative)
 TEST(heap_sort, build_min_heap)
 {
     int expected_heap[size] = {1, 2, 3, 4, 7, 9, 10, 14, 8, 16};
-    build_min_heap(actual, heap_size);
+    build_min_heap(actual, heap_size, &heap_size);
     MEMCMP_EQUAL(expected_heap, actual, heap_size * sizeof(int));
 }
 
 TEST(heap_sort, build_min_heap_iterative)
 {
     int expected_heap[size] = {1, 2, 3, 4, 7, 9, 10, 14, 8, 16};
-    build_min_heap_iterative(actual, heap_size);
+    build_min_heap_iterative(actual, heap_size, &heap_size);
     MEMCMP_EQUAL(expected_heap, actual, heap_size * sizeof(int));
 }
 

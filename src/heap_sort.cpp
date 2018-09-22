@@ -56,23 +56,26 @@ void max_heapify_iterative(int* a, int index, int heap_size)
     }
 }
 
-void build_max_heap(int* a, int heap_size)
+void build_max_heap(int* a, int size, int* heap_size)
 {
-    for(int i = heap_parent(heap_size); i >= 0; i--){
-        max_heapify(a, i, heap_size);
+    *heap_size = size;
+    for(int i = heap_parent(*heap_size); i >= 0; i--){
+        max_heapify(a, i, *heap_size);
     }
 }
 
-void build_max_heap_iterative(int* a, int heap_size)
+void build_max_heap_iterative(int* a, int size, int* heap_size)
 {
-    for(int i = heap_parent(heap_size); i >= 0; i--){
-        max_heapify_iterative(a, i, heap_size);
+    *heap_size = size;
+    for(int i = heap_parent(*heap_size); i >= 0; i--){
+        max_heapify_iterative(a, i, *heap_size);
     }
 }
 
-void heap_sort(int* a, int heap_size)
+void heap_sort(int* a, int size)
 {
-    build_max_heap(a, heap_size);
+    int heap_size = 0;
+    build_max_heap(a, size, &heap_size);
     for(int i = heap_size - 1; i >= 1; i--){
         std::swap(a[0], a[i]);
         heap_size--;
@@ -80,9 +83,10 @@ void heap_sort(int* a, int heap_size)
     }
 }
 
-void heap_sort_iterative(int* a, int heap_size)
+void heap_sort_iterative(int* a, int size)
 {
-    build_max_heap_iterative(a, heap_size);
+    int heap_size = 0;
+    build_max_heap_iterative(a, size, &heap_size);
     for(int i = heap_size - 1; i >= 1; i--){
         std::swap(a[0], a[i]);
         heap_size--;
@@ -130,23 +134,26 @@ void min_heapify_iterative(int* a, int index, int heap_size)
     }
 }
 
-void build_min_heap(int* a, int heap_size)
+void build_min_heap(int* a, int size, int* heap_size)
 {
-    for(int i = heap_parent(heap_size); i >= 0; i--){
-        min_heapify(a, i, heap_size);
+    *heap_size = size;
+    for(int i = heap_parent(*heap_size); i >= 0; i--){
+        min_heapify(a, i, *heap_size);
     }
 }
 
-void build_min_heap_iterative(int* a, int heap_size)
+void build_min_heap_iterative(int* a, int size, int* heap_size)
 {
-    for(int i = heap_parent(heap_size); i >= 0; i--){
-        min_heapify_iterative(a, i, heap_size);
+    *heap_size = size;
+    for(int i = heap_parent(*heap_size); i >= 0; i--){
+        min_heapify_iterative(a, i, *heap_size);
     }
 }
 
-void heap_sort_lower(int* a, int heap_size)
+void heap_sort_lower(int* a, int size)
 {
-    build_min_heap(a, heap_size);
+    int heap_size = 0;
+    build_min_heap(a, size, &heap_size);
     for(int i = heap_size - 1; i >= 1; i--){
         std::swap(a[0], a[i]);
         heap_size--;
@@ -154,9 +161,10 @@ void heap_sort_lower(int* a, int heap_size)
     }
 }
 
-void heap_sort_iterative_lower(int* a, int heap_size)
+void heap_sort_iterative_lower(int* a, int size)
 {
-    build_min_heap_iterative(a, heap_size);
+    int heap_size = 0;
+    build_min_heap_iterative(a, size, &heap_size);
     for(int i = heap_size - 1; i >= 1; i--){
         std::swap(a[0], a[i]);
         heap_size--;
