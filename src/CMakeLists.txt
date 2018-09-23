@@ -6,6 +6,7 @@ add_library(binary_insertion_sort STATIC "binary_insertion_sort.cpp")
 add_library(binary_search STATIC "binary_search.cpp")
 add_library(bubble_sort STATIC "bubble_sort.cpp")
 add_library(count_inversions STATIC "count_inversions.cpp")
+add_library(d_ary_heap STATIC "d_ary_heap.cpp")
 add_library(find_maximum_subarray STATIC "find_maximum_subarray.cpp")
 add_library(find_sum_pair STATIC "find_sum_pair.cpp")
 add_library(heap_sort STATIC "heap_sort.cpp")
@@ -33,6 +34,7 @@ target_link_libraries(
     binary_search
     bubble_sort
     count_inversions
+    d_ary_heap
     find_maximum_subarray
     find_sum_pair
     heap_sort

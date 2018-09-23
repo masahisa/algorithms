@@ -12,6 +12,7 @@ add_executable(
     "test_binary_search.cpp"
     "test_bubble_sort.cpp"
     "test_count_inversions.cpp"
+    "test_d_ary_heap.cpp"
     "test_find_maximum_subarray.cpp"
     "test_find_sum_pair.cpp"
     "test_heap_sort.cpp"
@@ -34,6 +35,7 @@ target_link_libraries(
     binary_search
     bubble_sort
     count_inversions
+    d_ary_heap
     find_maximum_subarray
     find_sum_pair
     heap_sort

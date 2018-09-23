@@ -6,6 +6,7 @@ IMPORT_TEST_GROUP(binary_insertion_sort);
 IMPORT_TEST_GROUP(binary_search);
 IMPORT_TEST_GROUP(bubble_sort);
 IMPORT_TEST_GROUP(count_inversions);
+IMPORT_TEST_GROUP(d_ary_heap);
 IMPORT_TEST_GROUP(find_maximum_subarray);
 IMPORT_TEST_GROUP(find_sum_pair);
 IMPORT_TEST_GROUP(heap_sort);
