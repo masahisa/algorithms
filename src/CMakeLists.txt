@@ -15,10 +15,12 @@ add_library(hybrid_sort STATIC "hybrid_sort.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
+add_library(monge_array STATIC "monge_array.cpp")
 add_library(priority_queue STATIC "priority_queue.cpp")
 add_library(randomization STATIC "randomization.cpp")
 add_library(selection_sort STATIC "selection_sort.cpp")
 add_library(square_matrix_multiply STATIC "square_matrix_multiply.cpp")
+add_library(young_tableau STATIC "young_tableau.cpp")
 
 # add executable
 add_executable(
@@ -43,8 +45,10 @@ target_link_libraries(
     insertion_sort
     linear_search
     merge_sort
+    monge_array
     priority_queue
     randomization
     selection_sort
     square_matrix_multiply
+    young_tableau
 )

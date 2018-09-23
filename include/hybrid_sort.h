@@ -1,3 +1,8 @@
+/**
+ * @file hybrid_sort.h
+ * @todo implement merge_k_sorted_lists_into_one_sorted_list
+ */
+
 #ifndef HYBRID_SORT_H
 #define HYBRID_SORT_H
 
@@ -12,5 +17,7 @@
  * @param threshold the minimum threshold of subproblem size to use merge sort
  */
 void insertion_sort_on_small_arrays_in_merge_sort(int*a, int first, int last, int threshold);
+
+void merge_k_sorted_lists_into_one_sorted_list(int* a, int size, int k);
 
 #endif // HYBRID_SORT_H

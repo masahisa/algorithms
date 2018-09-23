@@ -1,3 +1,8 @@
+/**
+ * @file square_matrix_multiply.h
+ * @todo implement square matrix multiply functions
+ */
+
 #ifndef SQUARE_MATRIX_MULTIPLY_H
 #define SQUARE_MATRIX_MULTIPLY_H
 
