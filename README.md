@@ -60,8 +60,8 @@ $ cmake -DCMAKE_BUILD_TYPE=Debug ..
 
 2. make  
 make the targets.  
-The sample `libnumeric.a` and `libmanipulator.so` are output to `lib` directory.  
-Executables `cpp_project_template` and `run_all_tests` are to `bin`.
+The sample `.a` and `.so` are output to `lib` directory.  
+Executables `algorithms` and `run_all_tests` are to `bin`.
 ```
 $ make
 ```
