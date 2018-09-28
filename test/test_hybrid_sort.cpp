@@ -24,3 +24,15 @@ TEST(hybrid_sort, insertion_sort_on_small_arrays_in_merge_sort)
     insertion_sort_on_small_arrays_in_merge_sort(actual, 0, size - 1, 2);
     MEMCMP_EQUAL(expected, actual, size * sizeof(int));
 }
+
+TEST(hybrid_sort, insertion_sort_on_small_arrays_in_quick_sort)
+{
+    insertion_sort_on_small_arrays_in_quick_sort(actual, 0, size - 1, 2);
+    MEMCMP_EQUAL(expected, actual, size * sizeof(int));
+}
+
+TEST(hybrid_sort, insertion_sort_on_the_entire_nearly_sorted_array_after_quick_sort)
+{
+    insertion_sort_on_the_entire_nearly_sorted_array_after_quick_sort(actual, 0, size - 1, 2);
+    MEMCMP_EQUAL(expected, actual, size * sizeof(int));
+}

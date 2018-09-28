@@ -17,6 +17,7 @@ add_library(linear_search STATIC "linear_search.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
 add_library(monge_array STATIC "monge_array.cpp")
 add_library(priority_queue STATIC "priority_queue.cpp")
+add_library(quick_sort STATIC "quick_sort.cpp")
 add_library(randomization STATIC "randomization.cpp")
 add_library(selection_sort STATIC "selection_sort.cpp")
 add_library(square_matrix_multiply STATIC "square_matrix_multiply.cpp")
@@ -47,6 +48,7 @@ target_link_libraries(
     merge_sort
     monge_array
     priority_queue
+    quick_sort
     randomization
     selection_sort
     square_matrix_multiply
