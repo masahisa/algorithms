@@ -15,6 +15,7 @@ add_executable(
     "test_d_ary_heap.cpp"
     "test_find_maximum_subarray.cpp"
     "test_find_sum_pair.cpp"
+    "test_fuzzy_sort.cpp"
     "test_heap_sort.cpp"
     "test_horners_rule.cpp"
     "test_hybrid_sort.cpp"
@@ -41,6 +42,7 @@ target_link_libraries(
     d_ary_heap
     find_maximum_subarray
     find_sum_pair
+    fuzzy_sort
     heap_sort
     horners_rule
     hybrid_sort
