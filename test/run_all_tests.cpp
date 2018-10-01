@@ -21,6 +21,7 @@ IMPORT_TEST_GROUP(merge_sort);
 IMPORT_TEST_GROUP(monge_array);
 IMPORT_TEST_GROUP(priority_queue);
 IMPORT_TEST_GROUP(quick_sort);
+IMPORT_TEST_GROUP(radix_sort);
 IMPORT_TEST_GROUP(randomization);
 IMPORT_TEST_GROUP(selection_sort);
 IMPORT_TEST_GROUP(square_matrix_multiply);
