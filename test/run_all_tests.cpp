@@ -5,6 +5,7 @@ IMPORT_TEST_GROUP(add_binary);
 IMPORT_TEST_GROUP(binary_insertion_sort);
 IMPORT_TEST_GROUP(binary_search);
 IMPORT_TEST_GROUP(bubble_sort);
+IMPORT_TEST_GROUP(count_in_range);
 IMPORT_TEST_GROUP(count_inversions);
 IMPORT_TEST_GROUP(counting_sort);
 IMPORT_TEST_GROUP(d_ary_heap);

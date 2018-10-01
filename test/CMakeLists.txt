@@ -11,6 +11,7 @@ add_executable(
     "test_binary_insertion_sort.cpp"
     "test_binary_search.cpp"
     "test_bubble_sort.cpp"
+    "test_count_in_range.cpp"
     "test_count_inversions.cpp"
     "test_counting_sort.cpp"
     "test_d_ary_heap.cpp"
@@ -39,6 +40,7 @@ target_link_libraries(
     binary_insertion_sort
     binary_search
     bubble_sort
+    count_in_range
     count_inversions
     counting_sort
     d_ary_heap

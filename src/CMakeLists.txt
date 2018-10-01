@@ -5,6 +5,7 @@ add_library(add_binary STATIC "add_binary.cpp")
 add_library(binary_insertion_sort STATIC "binary_insertion_sort.cpp")
 add_library(binary_search STATIC "binary_search.cpp")
 add_library(bubble_sort STATIC "bubble_sort.cpp")
+add_library(count_in_range STATIC "count_in_range.cpp")
 add_library(count_inversions STATIC "count_inversions.cpp")
 add_library(counting_sort STATIC "counting_sort.cpp")
 add_library(d_ary_heap STATIC "d_ary_heap.cpp")
@@ -38,6 +39,7 @@ target_link_libraries(
     binary_insertion_sort
     binary_search
     bubble_sort
+    count_in_range
     count_inversions
     counting_sort
     d_ary_heap
