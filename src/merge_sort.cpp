@@ -1,10 +1,5 @@
 #include "merge_sort.h"
-
-/**
- * @var const int SENTINEL_MERGE_SORT
- * @brief the value of sentinel for merge sort
- */
-const int SENTINEL_MERGE_SORT = 0x00FFFFFF;
+#include <cstdint>
 
 void merge(int* a, int first, int middle, int last)
 {
@@ -80,8 +75,8 @@ void merge_with_sentinel(int* a, int first, int middle, int last)
     }
 
     // set sentinel at the last of subarrays
-    left[left_size - 1] = SENTINEL_MERGE_SORT;
-    right[right_size - 1] = SENTINEL_MERGE_SORT;
+    left[left_size - 1] = INT32_MAX;
+    right[right_size - 1] = INT32_MAX;
 
     // sort a[first, last] using temporary subarrays
     for(int k = first, i = 0, j = 0; k <= last; k++){

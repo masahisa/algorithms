@@ -1,6 +1,7 @@
 #include "d_ary_heap.h"
 #include "priority_queue.h"
 #include <utility>
+#include <cstdint>
 
 int d_ary_heap_parent(int d, int index)
 {
@@ -68,7 +69,7 @@ void d_ary_heap_increase_key(int* a, int d, int index, int key)
 void d_ary_max_heap_insert(int* a, int d, int key, int* heap_size)
 {
     *heap_size += 1;
-    a[*heap_size - 1] = HEAP_MINIMUM;
+    a[*heap_size - 1] = INT32_MIN;
     d_ary_heap_increase_key(a, d, *heap_size - 1, key);
 }
 

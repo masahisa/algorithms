@@ -1,14 +1,9 @@
 #include "find_maximum_subarray.h"
-
-/**
- * @var const int MINIMUM_SUM
- * @brief the minimum value of sum
- */
-const int MINIMUM_SUM = -2147483648;
+#include <cstdint>
 
 void find_max_crossing_subarray(int* a, int first, int middle, int last, sub_array* result)
 {
-    int left_sum = MINIMUM_SUM;
+    int left_sum = INT32_MIN;
     int tmp_sum = 0;
     for(int i = middle; i >= first; i--){
         tmp_sum += a[i];
@@ -18,7 +13,7 @@ void find_max_crossing_subarray(int* a, int first, int middle, int last, sub_arr
         }
     }
 
-    int right_sum = MINIMUM_SUM;
+    int right_sum = INT32_MIN;
     tmp_sum = 0;
     for(int j = middle + 1; j <= last; j++){
         tmp_sum += a[j];
@@ -67,7 +62,7 @@ void find_maximum_subarray(int* a, int first, int last, sub_array* result)
 
 void find_maximum_subarray_bruteforce(int* a, int first, int last, sub_array* result)
 {
-    result->sum = MINIMUM_SUM;
+    result->sum = INT32_MIN;
     for(int i = first; i <= last; i++){
         int tmp = 0;
         for(int j = i; j <= last; j++){

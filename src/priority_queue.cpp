@@ -47,14 +47,14 @@ void heap_increase_key_no_swap(int* a, int index, int key)
 void max_heap_insert(int* a, int key, int* heap_size)
 {
     *heap_size += 1;
-    a[*heap_size - 1] = HEAP_MINIMUM;
+    a[*heap_size - 1] = INT32_MIN;
     heap_increase_key(a, *heap_size - 1, key);
 }
 
 void max_heap_insert_no_swap(int* a, int key, int* heap_size)
 {
     *heap_size += 1;
-    a[*heap_size - 1] = HEAP_MINIMUM;
+    a[*heap_size - 1] = INT32_MIN;
     heap_increase_key_no_swap(a, *heap_size - 1, key);
 }
 
@@ -110,14 +110,14 @@ void heap_decrease_key_no_swap(int* a, int index, int key)
 void min_heap_insert(int* a, int key, int* heap_size)
 {
     *heap_size += 1;
-    a[*heap_size - 1] = HEAP_MAXIMUM;
+    a[*heap_size - 1] = INT32_MAX;
     heap_decrease_key(a, *heap_size - 1, key);
 }
 
 void min_heap_insert_no_swap(int* a, int key, int* heap_size)
 {
     *heap_size += 1;
-    a[*heap_size - 1] = HEAP_MAXIMUM;
+    a[*heap_size - 1] = INT32_MAX;
     heap_decrease_key_no_swap(a, *heap_size - 1, key);
 }
 

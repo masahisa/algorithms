@@ -1,23 +1,13 @@
 #ifndef PRIORITY_QUEUE_H
 #define PRIORITY_QUEUE_H
 
+#include <cstdint>
+
 /**
  * @var const int HEAP_UNDERFLOW
  * @brief the error code of underflow
  */
-const int HEAP_UNDERFLOW = -2147483648;
-
-/**
- * @var const int HEAP_MAXIMUM
- * @brief the maximum value of heap
- */
-const int HEAP_MAXIMUM = 2147483647;
-
-/**
- * @var const int HEAP_MINIMUM
- * @brief the minimum value of heap
- */
-const int HEAP_MINIMUM = -2147483648;
+const int HEAP_UNDERFLOW = INT32_MIN;
 
 /**
  * @fn int heap_maximum(int* a)
