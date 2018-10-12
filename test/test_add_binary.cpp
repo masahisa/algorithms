@@ -1,6 +1,5 @@
 #include <CppUTest/TestHarness.h>
 #include "add_binary.h"
-#include <cstring>
 
 TEST_GROUP(add_binary)
 {

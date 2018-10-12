@@ -1,6 +1,5 @@
 #include <CppUTest/TestHarness.h>
 #include "square_matrix_multiply.h"
-#include <cstring>
 
 TEST_GROUP(square_matrix_multiply)
 {

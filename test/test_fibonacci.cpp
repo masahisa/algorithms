@@ -1,6 +1,5 @@
 #include <CppUTest/TestHarness.h>
 #include "fibonacci.h"
-#include <cstring>
 
 TEST_GROUP(fibonacci)
 {
