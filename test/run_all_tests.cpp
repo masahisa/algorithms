@@ -9,6 +9,7 @@ IMPORT_TEST_GROUP(count_in_range);
 IMPORT_TEST_GROUP(count_inversions);
 IMPORT_TEST_GROUP(counting_sort);
 IMPORT_TEST_GROUP(d_ary_heap);
+IMPORT_TEST_GROUP(fibonacci);
 IMPORT_TEST_GROUP(find_maximum_subarray);
 IMPORT_TEST_GROUP(find_sum_pair);
 IMPORT_TEST_GROUP(fuzzy_sort);

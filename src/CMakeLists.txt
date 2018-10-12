@@ -9,6 +9,7 @@ add_library(count_in_range STATIC "count_in_range.cpp")
 add_library(count_inversions STATIC "count_inversions.cpp")
 add_library(counting_sort STATIC "counting_sort.cpp")
 add_library(d_ary_heap STATIC "d_ary_heap.cpp")
+add_library(fibonacci STATIC "fibonacci.cpp")
 add_library(find_maximum_subarray STATIC "find_maximum_subarray.cpp")
 add_library(find_sum_pair STATIC "find_sum_pair.cpp")
 add_library(fuzzy_sort STATIC "fuzzy_sort.cpp")
@@ -45,6 +46,7 @@ target_link_libraries(
     count_inversions
     counting_sort
     d_ary_heap
+    fibonacci
     find_maximum_subarray
     find_sum_pair
     fuzzy_sort
