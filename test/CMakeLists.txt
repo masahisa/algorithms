@@ -29,6 +29,7 @@ add_executable(
     "test_quick_sort.cpp"
     "test_radix_sort.cpp"
     "test_randomization.cpp"
+    "test_rod_cutting.cpp"
     "test_selection_sort.cpp"
     "test_square_matrix_multiply.cpp"
     "test_young_tableau.cpp"
@@ -59,6 +60,7 @@ target_link_libraries(
     quick_sort
     radix_sort
     randomization
+    rod_cutting
     selection_sort
     square_matrix_multiply
     young_tableau

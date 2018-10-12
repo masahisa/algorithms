@@ -23,6 +23,7 @@ add_library(priority_queue STATIC "priority_queue.cpp")
 add_library(quick_sort STATIC "quick_sort.cpp")
 add_library(radix_sort STATIC "radix_sort.cpp")
 add_library(randomization STATIC "randomization.cpp")
+add_library(rod_cutting STATIC "rod_cutting.cpp")
 add_library(selection_sort STATIC "selection_sort.cpp")
 add_library(square_matrix_multiply STATIC "square_matrix_multiply.cpp")
 add_library(young_tableau STATIC "young_tableau.cpp")
@@ -58,6 +59,7 @@ target_link_libraries(
     quick_sort
     radix_sort
     randomization
+    rod_cutting
     selection_sort
     square_matrix_multiply
     young_tableau
