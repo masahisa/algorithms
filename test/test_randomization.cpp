@@ -28,10 +28,13 @@ TEST(randomization, random_int)
     int sum = 0;
     trial = 1000;
     for(int i = 0; i < trial; i++){
-        sum += random_int(min, max);
+        int val = random_int(min, max);
+        sum += val;
+        CHECK(val >= min && val <= max);
     }
     double mean = (double)sum / (double)trial;
-    double error = std::abs(mean - 2.0);
+    double mean_expected = ((double)max + (double)min) / 2.0;
+    double error = std::abs(mean - mean_expected);
     CHECK(error < 0.1);
 }
 
