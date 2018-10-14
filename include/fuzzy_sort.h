@@ -1,6 +1,6 @@
 /**
  * @file fuzzy_sort.h
- * @todo implement fuzzy sort
+ * @todo implement fuzzy sort (Problem 7-6)
  */
 
 #ifndef FUZZY_SORT_H

@@ -1,6 +1,8 @@
 /**
  * @file hybrid_sort.h
- * @todo implement merge_k_sorted_lists_into_one_sorted_list
+ * @todo implement merge_k_sorted_lists_into_one_sorted_list (Exercise 6.5-9) \n
+ *       implement Sorting variable-length items (Problem 8-3) \n
+ *       implement Lower bound on merging sorted lists (Problem 8-6)
  */
 
 #ifndef HYBRID_SORT_H

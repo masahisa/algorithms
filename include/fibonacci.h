@@ -4,7 +4,7 @@
 /**
  * @fn int bottom_up_fibonacci(int n)
  * @brief calculate Fibonacci number by dynamic programming in O(n) time. \n
- *        Problem 15.1-5
+ *        Exercise 15.1-5
  * @param n the integer that calculates nth Fibonacci number
  * @return nth Fibonacci number
  */

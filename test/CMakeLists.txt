@@ -8,9 +8,12 @@ add_executable(
     run_all_tests
     "run_all_tests.cpp"
     "test_add_binary.cpp"
+    "test_average_sort.cpp"
     "test_binary_insertion_sort.cpp"
     "test_binary_search.cpp"
     "test_bubble_sort.cpp"
+    "test_bucket_sort.cpp"
+    "test_column_sort.cpp"
     "test_count_in_range.cpp"
     "test_count_inversions.cpp"
     "test_counting_sort.cpp"
@@ -22,6 +25,7 @@ add_executable(
     "test_heap_sort.cpp"
     "test_horners_rule.cpp"
     "test_hybrid_sort.cpp"
+    "test_in_place_sort.cpp"
     "test_insertion_sort.cpp"
     "test_linear_search.cpp"
     "test_merge_sort.cpp"
@@ -33,6 +37,7 @@ add_executable(
     "test_rod_cutting.cpp"
     "test_selection_sort.cpp"
     "test_square_matrix_multiply.cpp"
+    "test_water_jugs.cpp"
     "test_young_tableau.cpp"
 )
 
@@ -40,9 +45,12 @@ add_executable(
 target_link_libraries(
     run_all_tests
     add_binary
+    average_sort
     binary_insertion_sort
     binary_search
     bubble_sort
+    bucket_sort
+    column_sort
     count_in_range
     count_inversions
     counting_sort
@@ -54,6 +62,7 @@ target_link_libraries(
     heap_sort
     horners_rule
     hybrid_sort
+    in_place_sort
     insertion_sort
     linear_search
     merge_sort
@@ -65,6 +74,7 @@ target_link_libraries(
     rod_cutting
     selection_sort
     square_matrix_multiply
+    water_jugs
     young_tableau
     ${CPPUTEST_LDFLGAS}
 )

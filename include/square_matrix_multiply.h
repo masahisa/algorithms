@@ -1,6 +1,6 @@
 /**
  * @file square_matrix_multiply.h
- * @todo implement square matrix multiply functions
+ * @todo implement square matrix multiply functions (Chapter 4-2, Exercise 4.2-1 to 4.2-7)
  */
 
 #ifndef SQUARE_MATRIX_MULTIPLY_H

@@ -1,6 +1,6 @@
 /**
  * @file d_ary_heap.h
- * @todo implement d_ary_min_heap
+ * @todo implement d_ary_min_heap (Problem 6-2)
  */
 
 #ifndef D_ARY_HEAP_H

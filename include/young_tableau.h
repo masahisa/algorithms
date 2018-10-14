@@ -1,6 +1,6 @@
 /**
  * @file young_tableau.h
- * @todo implement young tableau
+ * @todo implement young tableau (Problem 6-3)
  */
 
 #ifndef YOUNG_TABLEAU_H

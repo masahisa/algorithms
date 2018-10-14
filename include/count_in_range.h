@@ -8,7 +8,7 @@
  * @brief given n integers in the range [0 .. k], \n
  *        preprocesses its input in O(n+k) time and then answers any query \n
  *        about how many of the n integers fall into a range [first .. last] in O(1) time. \n
- *        Problem 8.2-4
+ *        Exercise 8.2-4
  */
 class count_in_range{
 private:

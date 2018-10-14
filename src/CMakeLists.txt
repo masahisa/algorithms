@@ -2,9 +2,12 @@ cmake_minimum_required(VERSION 2.8)
 
 # add library
 add_library(add_binary STATIC "add_binary.cpp")
+add_library(average_sort STATIC "average_sort.cpp")
 add_library(binary_insertion_sort STATIC "binary_insertion_sort.cpp")
 add_library(binary_search STATIC "binary_search.cpp")
 add_library(bubble_sort STATIC "bubble_sort.cpp")
+add_library(bucket_sort STATIC "bucket_sort.cpp")
+add_library(column_sort STATIC "column_sort.cpp")
 add_library(count_in_range STATIC "count_in_range.cpp")
 add_library(count_inversions STATIC "count_inversions.cpp")
 add_library(counting_sort STATIC "counting_sort.cpp")
@@ -16,6 +19,7 @@ add_library(fuzzy_sort STATIC "fuzzy_sort.cpp")
 add_library(heap_sort STATIC "heap_sort.cpp")
 add_library(horners_rule STATIC "horners_rule.cpp")
 add_library(hybrid_sort STATIC "hybrid_sort.cpp")
+add_library(in_place_sort STATIC "in_place_sort.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
@@ -27,6 +31,7 @@ add_library(randomization STATIC "randomization.cpp")
 add_library(rod_cutting STATIC "rod_cutting.cpp")
 add_library(selection_sort STATIC "selection_sort.cpp")
 add_library(square_matrix_multiply STATIC "square_matrix_multiply.cpp")
+add_library(water_jugs STATIC "water_jugs.cpp")
 add_library(young_tableau STATIC "young_tableau.cpp")
 
 # add executable
@@ -39,9 +44,12 @@ add_executable(
 target_link_libraries(
     ${PROJECT_NAME}
     add_binary
+    average_sort
     binary_insertion_sort
     binary_search
     bubble_sort
+    bucket_sort
+    column_sort
     count_in_range
     count_inversions
     counting_sort
@@ -53,6 +61,7 @@ target_link_libraries(
     heap_sort
     horners_rule
     hybrid_sort
+    in_place_sort
     insertion_sort
     linear_search
     merge_sort
@@ -64,5 +73,6 @@ target_link_libraries(
     rod_cutting
     selection_sort
     square_matrix_multiply
+    water_jugs
     young_tableau
 )
