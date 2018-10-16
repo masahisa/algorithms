@@ -25,11 +25,13 @@ add_library(linear_search STATIC "linear_search.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
 add_library(monge_array STATIC "monge_array.cpp")
 add_library(priority_queue STATIC "priority_queue.cpp")
+add_library(quantile STATIC "quantile.cpp")
 add_library(quick_sort STATIC "quick_sort.cpp")
 add_library(radix_sort STATIC "radix_sort.cpp")
 add_library(randomization STATIC "randomization.cpp")
 add_library(rod_cutting STATIC "rod_cutting.cpp")
 add_library(selection_sort STATIC "selection_sort.cpp")
+add_library(selection STATIC "selection.cpp")
 add_library(square_matrix_multiply STATIC "square_matrix_multiply.cpp")
 add_library(water_jugs STATIC "water_jugs.cpp")
 add_library(young_tableau STATIC "young_tableau.cpp")
@@ -67,11 +69,13 @@ target_link_libraries(
     merge_sort
     monge_array
     priority_queue
+    quantile
     quick_sort
     radix_sort
     randomization
     rod_cutting
     selection_sort
+    selection
     square_matrix_multiply
     water_jugs
     young_tableau

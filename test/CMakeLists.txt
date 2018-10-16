@@ -31,11 +31,13 @@ add_executable(
     "test_merge_sort.cpp"
     "test_monge_array.cpp"
     "test_priority_queue.cpp"
+    "test_quantile.cpp"
     "test_quick_sort.cpp"
     "test_radix_sort.cpp"
     "test_randomization.cpp"
     "test_rod_cutting.cpp"
     "test_selection_sort.cpp"
+    "test_selection.cpp"
     "test_square_matrix_multiply.cpp"
     "test_water_jugs.cpp"
     "test_young_tableau.cpp"
@@ -68,11 +70,13 @@ target_link_libraries(
     merge_sort
     monge_array
     priority_queue
+    quantile
     quick_sort
     radix_sort
     randomization
     rod_cutting
     selection_sort
+    selection
     square_matrix_multiply
     water_jugs
     young_tableau
