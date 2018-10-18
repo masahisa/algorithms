@@ -26,6 +26,7 @@ add_library(merge_sort STATIC "merge_sort.cpp")
 add_library(monge_array STATIC "monge_array.cpp")
 add_library(priority_queue STATIC "priority_queue.cpp")
 add_library(quantile STATIC "quantile.cpp")
+add_library(queue STATIC "queue.cpp")
 add_library(quick_sort STATIC "quick_sort.cpp")
 add_library(radix_sort STATIC "radix_sort.cpp")
 add_library(randomization STATIC "randomization.cpp")
@@ -71,6 +72,7 @@ target_link_libraries(
     monge_array
     priority_queue
     quantile
+    queue
     quick_sort
     radix_sort
     randomization

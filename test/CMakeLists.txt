@@ -32,6 +32,7 @@ add_executable(
     "test_monge_array.cpp"
     "test_priority_queue.cpp"
     "test_quantile.cpp"
+    "test_queue.cpp"
     "test_quick_sort.cpp"
     "test_radix_sort.cpp"
     "test_randomization.cpp"
@@ -72,6 +73,7 @@ target_link_libraries(
     monge_array
     priority_queue
     quantile
+    queue
     quick_sort
     radix_sort
     randomization
