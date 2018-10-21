@@ -51,7 +51,7 @@ TEST(queue, dequeue)
     MEMCMP_EQUAL(expected, queue, size * sizeof(int));
 }
 
-TEST(queue, enqueue_underflow)
+TEST(queue, dequeue_underflow)
 {
     CHECK_EQUAL(15, dequeue(queue, &head, &tail, size));
     CHECK_EQUAL(6, dequeue(queue, &head, &tail, size));
