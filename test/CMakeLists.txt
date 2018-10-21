@@ -18,6 +18,7 @@ add_executable(
     "test_count_inversions.cpp"
     "test_counting_sort.cpp"
     "test_d_ary_heap.cpp"
+    "test_deque.cpp"
     "test_fibonacci.cpp"
     "test_find_maximum_subarray.cpp"
     "test_find_sum_pair.cpp"
@@ -59,6 +60,7 @@ target_link_libraries(
     count_inversions
     counting_sort
     d_ary_heap
+    deque
     fibonacci
     find_maximum_subarray
     find_sum_pair
