@@ -42,7 +42,6 @@ int head_dequeue(int* a, int* head, int* tail, int size)
         return INT32_MIN;
     }
 
-    //int x = a[*head];
     if(*head == size - 1){
         *head = 0;
     }
@@ -58,8 +57,7 @@ int tail_dequeue(int* a, int* head, int* tail, int size)
     if(*head == *tail - 1){
         return INT32_MIN;
     }
-
-    //int x = a[*tail];
+    
     if(*tail == 0){
         *tail = size - 1;
     }
