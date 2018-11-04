@@ -13,6 +13,7 @@ add_library(count_inversions STATIC "count_inversions.cpp")
 add_library(counting_sort STATIC "counting_sort.cpp")
 add_library(d_ary_heap STATIC "d_ary_heap.cpp")
 add_library(deque STATIC "deque.cpp")
+add_library(doubly_linked_list STATIC "doubly_linked_list.cpp")
 add_library(fibonacci STATIC "fibonacci.cpp")
 add_library(find_maximum_subarray STATIC "find_maximum_subarray.cpp")
 add_library(find_sum_pair STATIC "find_sum_pair.cpp")
@@ -60,6 +61,7 @@ target_link_libraries(
     counting_sort
     d_ary_heap
     deque
+    doubly_linked_list
     fibonacci
     find_maximum_subarray
     find_sum_pair

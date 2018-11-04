@@ -19,6 +19,7 @@ add_executable(
     "test_counting_sort.cpp"
     "test_d_ary_heap.cpp"
     "test_deque.cpp"
+    "test_doubly_linked_list.cpp"
     "test_fibonacci.cpp"
     "test_find_maximum_subarray.cpp"
     "test_find_sum_pair.cpp"
@@ -61,6 +62,7 @@ target_link_libraries(
     counting_sort
     d_ary_heap
     deque
+    doubly_linked_list
     fibonacci
     find_maximum_subarray
     find_sum_pair
