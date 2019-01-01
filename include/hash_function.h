@@ -15,14 +15,14 @@
 int division_method(int k, int m);
 
 /**
- * @fn int multiplication_method(int k, int m, double A)
- * @brief calculates the hash value of the key by multiplication method
+ * @fn int multiplication_method(int k, int m)
+ * @brief calculates the hash value of the key by multiplication method \n
+ *        A is a constant value in the range 0 < A < 1, Knuth suggests A = (sqrt(5) - 1) / 2
  * @param k key
  * @param m typically a power of 2
- * @param A a constant value in the range 0 < A < 1, Knuth suggests A = (sqrt(5) - 1) / 2
  * @retrun the hash value of the key
  */
-int multiplication_method(int k, int m, double A);
+int multiplication_method(int k, int m);
 
 //int linear_probing(int h, int m);
 //int quadratic_probing(int h, int m, int c1, int c2);

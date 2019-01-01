@@ -23,6 +23,5 @@ TEST(hash_function, multiplication_method)
 {
     int k = 123456;
     int m = static_cast<int>(std::pow(2.0, 14.0));
-    double A = (std::sqrt(5) - 1.0) / 2.0;
-    CHECK_EQUAL(67, multiplication_method(k, m , A));
+    CHECK_EQUAL(67, multiplication_method(k, m));
 }
