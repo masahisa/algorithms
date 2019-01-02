@@ -7,6 +7,7 @@ add_library(binary_insertion_sort STATIC "binary_insertion_sort.cpp")
 add_library(binary_search STATIC "binary_search.cpp")
 add_library(bubble_sort STATIC "bubble_sort.cpp")
 add_library(bucket_sort STATIC "bucket_sort.cpp")
+add_library(chained_hash_table STATIC "chained_hash_table.cpp")
 add_library(column_sort STATIC "column_sort.cpp")
 add_library(count_in_range STATIC "count_in_range.cpp")
 add_library(count_inversions STATIC "count_inversions.cpp")
@@ -56,6 +57,7 @@ target_link_libraries(
     binary_search
     bubble_sort
     bucket_sort
+    chained_hash_table
     column_sort
     count_in_range
     count_inversions

@@ -13,6 +13,7 @@ add_executable(
     "test_binary_search.cpp"
     "test_bubble_sort.cpp"
     "test_bucket_sort.cpp"
+    "test_chained_hash_table.cpp"
     "test_column_sort.cpp"
     "test_count_in_range.cpp"
     "test_count_inversions.cpp"
@@ -57,6 +58,7 @@ target_link_libraries(
     binary_search
     bubble_sort
     bucket_sort
+    chained_hash_table
     column_sort
     count_in_range
     count_inversions
