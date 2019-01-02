@@ -45,7 +45,7 @@ TEST(doubly_linked_list, search_doubly_linked_list)
     dll_node* node = search_doubly_linked_list(&list, 10);
     CHECK_EQUAL(10, node->key);
     dll_node* node1 = search_doubly_linked_list(&list, 5);
-    CHECK_EQUAL(5, node1->key);   
+    CHECK_EQUAL(5, node1->key);
 }
 
 TEST(doubly_linked_list, delete_doubly_linked_list)

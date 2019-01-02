@@ -39,6 +39,7 @@ void destruct_doubly_linked_list(doubly_linked_list* list);
  *        if found, return the address of the node, otherwise return the sentinel
  * @param list the doubly linked list
  * @param key a searching key
+ * @return the address of the found node or the sentinel
  */
 dll_node* search_doubly_linked_list(doubly_linked_list* list, int key);
 
