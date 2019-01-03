@@ -27,8 +27,8 @@ int multiplication_method(int k, int m, double A);
  * @param k key
  * @param m the size of the hash table, not necessarily prime
  * @param p a prime number, p > m
- * @param a any integer
- * @param b any integer
+ * @param a any integer, a = 1, 2, ..., p - 1
+ * @param b any integer, b = 0, 1, ..., p - 1
  * @return the hash value of the key
  */
 int universal_hashing(int k, int m, int p, int a, int b);
