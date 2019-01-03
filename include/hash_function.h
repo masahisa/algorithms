@@ -1,3 +1,7 @@
+/**
+ * @file hash_function.h
+ * @todo reconsider the hash function APIs
+ */
 #ifndef HASH_FUNCTION_H
 #define HASH_FUNCTION_H
 
