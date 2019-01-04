@@ -26,6 +26,7 @@ add_executable(
     "test_find_sum_pair.cpp"
     "test_fuzzy_sort.cpp"
     "test_hash_function.cpp"
+    "test_hash_probing.cpp"
     "test_heap_sort.cpp"
     "test_horners_rule.cpp"
     "test_hybrid_sort.cpp"
@@ -71,6 +72,7 @@ target_link_libraries(
     find_sum_pair
     fuzzy_sort
     hash_function
+    hash_probing
     heap_sort
     horners_rule
     hybrid_sort

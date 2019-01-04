@@ -20,6 +20,7 @@ add_library(find_maximum_subarray STATIC "find_maximum_subarray.cpp")
 add_library(find_sum_pair STATIC "find_sum_pair.cpp")
 add_library(fuzzy_sort STATIC "fuzzy_sort.cpp")
 add_library(hash_function STATIC "hash_function.cpp")
+add_library(hash_probing STATIC "hash_probing.cpp")
 add_library(heap_sort STATIC "heap_sort.cpp")
 add_library(horners_rule STATIC "horners_rule.cpp")
 add_library(hybrid_sort STATIC "hybrid_sort.cpp")
@@ -70,6 +71,7 @@ target_link_libraries(
     find_sum_pair
     fuzzy_sort
     hash_function
+    hash_probing
     heap_sort
     horners_rule
     hybrid_sort
