@@ -7,11 +7,14 @@ TEST_GROUP(chained_hash_table)
     chained_hash_table table;
     int k = 2000;
     int m = 701;
+    hash_function* function;
     void setup(){
-        construct_chained_hash(&table, m, division_method);
+        function = new division_hash_function(m);
+        construct_chained_hash(&table, m, function);
     }
     void teardown(){
         destruct_chained_hash(&table);
+        delete function;
     }
 };
 
@@ -27,7 +30,7 @@ TEST(chained_hash_table, construct_chained_hash)
 TEST(chained_hash_table, chained_hash_insert)
 {
     chained_hash_insert(&table, k);
-    int index = table.h(k, m);
+    int index = table.function->hash(k);
     CHECK_EQUAL(k, table.table[index].nil.next->key);
     POINTERS_EQUAL(&table.table[index].nil, table.table[index].nil.next->next);
     POINTERS_EQUAL(&table.table[index].nil, table.table[index].nil.next->prev);

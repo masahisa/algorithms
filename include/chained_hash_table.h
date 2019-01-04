@@ -2,6 +2,7 @@
 #define CHAINED_HASH_TABLE_H
 
 #include "doubly_linked_list.h"
+#include "hash_function.h"
 
 /**
  * @struct chained_hash_table
@@ -10,17 +11,17 @@
 struct chained_hash_table {
     doubly_linked_list* table;      /**< @brief the pointer to the table */
     int m;                          /**< @brief the size of the hash table */
-    int (*h)(int, int);             /**< @brief the pointer to a hash function */
+    hash_function* function;        /**< @brief the pointer to a hash function */
 };
 
 /**
- * @fn void construct_chained_hash(chained_hash_table* t, int m, int (*hash_function)(int, int))
+ * @fn void construct_chained_hash(chained_hash_table* t, int m, hash_function* f)
  * @brief constructs a chained hash table
  * @param t the pointer to the chained hash table
  * @param m the size of the hash table
- * @param hash_function the pointer to a hash function
+ * @param f the pointer to a hash function
  */
-void construct_chained_hash(chained_hash_table* t, int m, int (*hash_function)(int, int));
+void construct_chained_hash(chained_hash_table* t, int m, hash_function* f);
 
 /**
  * @fn void destruct_chained_hash(chained_hash_table* t)
