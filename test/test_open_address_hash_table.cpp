@@ -40,7 +40,7 @@ TEST(open_address_hash_table, open_address_hash_table_insert)
     for(int i = 0; i < 9; i++){
         open_address_hash_table_insert(&table, keys[i]);
     }
-    int expected[11] = {22, INT32_MIN, 59, 17, 4, 15, 28, 88, INT32_MIN, 31, 10};
+    int expected[11] = {22, HASH_NIL, 59, 17, 4, 15, 28, 88, HASH_NIL, 31, 10};
     for(int i = 0; i < m; i++){
         CHECK_EQUAL(expected[i], table.table[i]);
     }
@@ -52,7 +52,7 @@ TEST(open_address_hash_table, open_address_hash_table_insert_fail)
     for(int i = 0; i < 11; i++){
         open_address_hash_table_insert(&table, keys[i]);
     }
-    CHECK_FALSE(open_address_hash_table_insert(&table, 3));
+    CHECK_EQUAL(HASH_ERROR, open_address_hash_table_insert(&table, 3));
 }
 
 TEST(open_address_hash_table, open_address_hash_table_search)
@@ -66,7 +66,7 @@ TEST(open_address_hash_table, open_address_hash_table_search)
 
 TEST(open_address_hash_table, open_address_hash_table_search_fail)
 {
-    CHECK_EQUAL(INT32_MIN, open_address_hash_table_search(&table, 0));
+    CHECK_EQUAL(HASH_NIL, open_address_hash_table_search(&table, 0));
 }
 
 TEST(open_address_hash_table, open_address_hash_table_delete)
@@ -76,7 +76,7 @@ TEST(open_address_hash_table, open_address_hash_table_delete)
         open_address_hash_table_insert(&table, keys[i]);
     }
     open_address_hash_table_delete(&table, 15);
-    int expected[11] = {22, INT32_MIN, 59, 17, 4, INT32_MIN, 28, 88, INT32_MIN, 31, 10};
+    int expected[11] = {22, HASH_NIL, 59, 17, 4, HASH_DELETED, 28, 88, HASH_NIL, 31, 10};
     for(int i = 0; i < m; i++){
         CHECK_EQUAL(expected[i], table.table[i]);
     }
@@ -84,5 +84,15 @@ TEST(open_address_hash_table, open_address_hash_table_delete)
 
 TEST(open_address_hash_table, open_address_hash_table_delete_fail)
 {
-    CHECK_FALSE(open_address_hash_table_delete(&table, 0));
+    CHECK_EQUAL(HASH_ERROR, open_address_hash_table_delete(&table, 0));
+}
+
+TEST(open_address_hash_table, open_address_hash_table_search_after_delete)
+{
+    int keys[9] = {10, 22, 31, 4, 15, 28, 17, 88, 59};
+    for(int i = 0; i < 9; i++){
+        open_address_hash_table_insert(&table, keys[i]);
+    }
+    open_address_hash_table_delete(&table, 4);
+    CHECK_EQUAL(5, open_address_hash_table_search(&table, 15));
 }
