@@ -35,6 +35,7 @@ add_executable(
     "test_linear_search.cpp"
     "test_merge_sort.cpp"
     "test_monge_array.cpp"
+    "test_open_address_hash_table.cpp"
     "test_priority_queue.cpp"
     "test_quantile.cpp"
     "test_queue.cpp"
@@ -81,6 +82,7 @@ target_link_libraries(
     linear_search
     merge_sort
     monge_array
+    open_address_hash_table
     priority_queue
     quantile
     queue

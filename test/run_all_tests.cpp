@@ -28,6 +28,7 @@ IMPORT_TEST_GROUP(insertion_sort);
 IMPORT_TEST_GROUP(linear_search);
 IMPORT_TEST_GROUP(merge_sort);
 IMPORT_TEST_GROUP(monge_array);
+IMPORT_TEST_GROUP(open_address_hash_table);
 IMPORT_TEST_GROUP(priority_queue);
 IMPORT_TEST_GROUP(quantile);
 IMPORT_TEST_GROUP(queue);
