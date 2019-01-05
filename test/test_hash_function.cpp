@@ -61,7 +61,8 @@ TEST(hash_function, universal_hash_function)
     int k = 8;
     int m = 6;
     int p = 17;
-    std::unique_ptr<hash_function> ptr = std::make_unique<universal_hash_function>(m, p);
-    int index = ptr->hash(k);
-    CHECK_TRUE(index < m);
+    int a = 3;
+    int b = 4;
+    std::unique_ptr<hash_function> ptr = std::make_unique<universal_hash_function>(m, p, a, b);
+    CHECK_EQUAL(5, ptr->hash(k));
 }

@@ -131,8 +131,10 @@ public:
      * @brief constructer
      * @param m the size of the hash table
      * @param p a prime number, p > m
+     * @param a any integer, a = 1, 2, ..., p - 1
+     * @param b any integer, b = 0, 2, ..., p - 1
      */
-    universal_hash_function(int m, int p);
+    universal_hash_function(int m, int p, int a, int b);
     /**
      * @fn ~universal_hash_function()
      * @brief destructor
