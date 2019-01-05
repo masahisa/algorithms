@@ -127,7 +127,7 @@ private:
     int b_;     /**< @brief any integer, b = 0, 2, ..., p - 1 */
 public:
     /**
-     * @fn universal_hash_function(int m, int p)
+     * @fn universal_hash_function(int m, int p, int a, int b)
      * @brief constructer
      * @param m the size of the hash table
      * @param p a prime number, p > m
