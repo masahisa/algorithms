@@ -10,6 +10,7 @@ add_executable(
     "test_add_binary.cpp"
     "test_average_sort.cpp"
     "test_binary_insertion_sort.cpp"
+    "test_binary_search_tree.cpp"
     "test_binary_search.cpp"
     "test_bubble_sort.cpp"
     "test_bucket_sort.cpp"
@@ -58,6 +59,7 @@ target_link_libraries(
     add_binary
     average_sort
     binary_insertion_sort
+    binary_search_tree
     binary_search
     bubble_sort
     bucket_sort

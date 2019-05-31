@@ -4,6 +4,7 @@
 IMPORT_TEST_GROUP(add_binary);
 IMPORT_TEST_GROUP(average_sort);
 IMPORT_TEST_GROUP(binary_insertion_sort);
+IMPORT_TEST_GROUP(binary_search_tree);
 IMPORT_TEST_GROUP(binary_search);
 IMPORT_TEST_GROUP(bubble_sort);
 IMPORT_TEST_GROUP(bucket_sort);

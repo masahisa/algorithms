@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 add_library(add_binary STATIC "add_binary.cpp")
 add_library(average_sort STATIC "average_sort.cpp")
 add_library(binary_insertion_sort STATIC "binary_insertion_sort.cpp")
+add_library(binary_search_tree STATIC "binary_search_tree.cpp")
 add_library(binary_search STATIC "binary_search.cpp")
 add_library(bubble_sort STATIC "bubble_sort.cpp")
 add_library(bucket_sort STATIC "bucket_sort.cpp")
@@ -57,6 +58,7 @@ target_link_libraries(
     add_binary
     average_sort
     binary_insertion_sort
+    binary_search_tree
     binary_search
     bubble_sort
     bucket_sort
