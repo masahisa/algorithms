@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-bst_node* bst_search(bst_node* node, int key)
+const bst_node* bst_search(const bst_node* node, int key)
 {
     if(node == nullptr || key == node->key){
         return node;

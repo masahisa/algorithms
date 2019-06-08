@@ -19,6 +19,11 @@ TEST_GROUP(binary_search_tree)
     }
 };
 
+TEST(binary_search_tree, search_empty_tree)
+{
+    POINTERS_EQUAL(nullptr, bst_search(tree.root, 0));
+}
+
 TEST(binary_search_tree, insert_and_search)
 {
     bst_insert(&tree, nullptr);
@@ -32,9 +37,9 @@ TEST(binary_search_tree, insert_and_search)
         POINTERS_EQUAL(&node[i], bst_search(tree.root, key[i]));
     }
     
-    bst_preorder_tree_walk(tree.root);
-    bst_inorder_tree_walk(tree.root);
-    bst_postorder_tree_walk(tree.root);
+    bst_preorder_tree_walk(tree.root);  // 0,1,2,3,4,9,8,7,6,5
+    bst_inorder_tree_walk(tree.root);   // 0,1,2,3,4,5,6,7,8,9
+    bst_postorder_tree_walk(tree.root); // 5,6,7,8,9,4,3,2,1,0
 }
 
 TEST(binary_search_tree, minimum_empty_tree)

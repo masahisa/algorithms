@@ -21,13 +21,13 @@ struct bst{
 };
 
 /**
- * @fn bst_node* bst_search(bst_node* node, int key)
+ * @fn const bst_node* bst_search(const bst_node* node, int key)
  * @brief search the element that equals to the key in O(h) time
  * @param node the pointer to the tree root
  * @param key a searching value
  * @return the pointer of a element that equals to the key or nullptr
  */
-bst_node* bst_search(bst_node* node, int key);
+const bst_node* bst_search(const bst_node* node, int key);
 
 /**
  * @fn void bst_insert(bst* tree, bst_node* node)
