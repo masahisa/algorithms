@@ -44,6 +44,7 @@ add_executable(
     "test_quick_sort.cpp"
     "test_radix_sort.cpp"
     "test_randomization.cpp"
+    "test_red_black_tree.cpp"
     "test_rod_cutting.cpp"
     "test_selection_sort.cpp"
     "test_selection.cpp"
@@ -93,6 +94,7 @@ target_link_libraries(
     quick_sort
     radix_sort
     randomization
+    red_black_tree
     rod_cutting
     selection_sort
     selection

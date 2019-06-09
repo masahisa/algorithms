@@ -38,6 +38,7 @@ add_library(queue STATIC "queue.cpp")
 add_library(quick_sort STATIC "quick_sort.cpp")
 add_library(radix_sort STATIC "radix_sort.cpp")
 add_library(randomization STATIC "randomization.cpp")
+add_library(red_black_tree STATIC "red_black_tree.cpp")
 add_library(rod_cutting STATIC "rod_cutting.cpp")
 add_library(selection_sort STATIC "selection_sort.cpp")
 add_library(selection STATIC "selection.cpp")
@@ -92,6 +93,7 @@ target_link_libraries(
     quick_sort
     radix_sort
     randomization
+    red_black_tree
     rod_cutting
     selection_sort
     selection

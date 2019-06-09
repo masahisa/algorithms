@@ -37,6 +37,7 @@ IMPORT_TEST_GROUP(queue);
 IMPORT_TEST_GROUP(quick_sort);
 IMPORT_TEST_GROUP(radix_sort);
 IMPORT_TEST_GROUP(randomization);
+IMPORT_TEST_GROUP(red_black_tree);
 IMPORT_TEST_GROUP(rod_cutting);
 IMPORT_TEST_GROUP(selection_sort);
 IMPORT_TEST_GROUP(selection);
