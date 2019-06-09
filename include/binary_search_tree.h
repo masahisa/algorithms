@@ -25,7 +25,7 @@ struct bst{
  * @brief search the element that equals to the key in O(h) time
  * @param node the pointer to the tree root
  * @param key a searching value
- * @return the pointer of a element that equals to the key or nullptr
+ * @return the pointer to a element that equals to the key or nullptr
  */
 const bst_node* bst_search(const bst_node* node, int key);
 
@@ -74,7 +74,7 @@ bst_node* bst_maximum(bst_node* node);
  * @fn bst_node* bst_successor(bst_node* node)
  * @brief get the successor of the node in the binary search tree in O(h) time
  * @param node a subtree rooted at node
- * @return a pointer of the successor of the node
+ * @return a pointer to the successor of the node
  */
 bst_node* bst_successor(bst_node* node);
 
@@ -82,7 +82,7 @@ bst_node* bst_successor(bst_node* node);
  * @fn bst_node* bst_predecessor(bst_node* node)
  * @brief get the predecessor of the node in the binary search tree in O(h) time
  * @param node a subtree rooted at node
- * @return a pointer of the predecessor of the node
+ * @return a pointer to the predecessor of the node
  */
 bst_node* bst_predecessor(bst_node* node);
 

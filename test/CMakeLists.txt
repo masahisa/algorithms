@@ -37,6 +37,7 @@ add_executable(
     "test_merge_sort.cpp"
     "test_monge_array.cpp"
     "test_open_address_hash_table.cpp"
+    "test_order_statistic_tree.cpp"
     "test_perfect_hashing.cpp"
     "test_priority_queue.cpp"
     "test_quantile.cpp"
@@ -87,6 +88,7 @@ target_link_libraries(
     merge_sort
     monge_array
     open_address_hash_table
+    order_statistic_tree
     perfect_hashing
     priority_queue
     quantile

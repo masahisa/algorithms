@@ -31,6 +31,7 @@ add_library(linear_search STATIC "linear_search.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
 add_library(monge_array STATIC "monge_array.cpp")
 add_library(open_address_hash_table STATIC "open_address_hash_table.cpp")
+add_library(order_statistic_tree STATIC "order_statistic_tree.cpp")
 add_library(perfect_hashing STATIC "perfect_hashing.cpp")
 add_library(priority_queue STATIC "priority_queue.cpp")
 add_library(quantile STATIC "quantile.cpp")
@@ -86,6 +87,7 @@ target_link_libraries(
     merge_sort
     monge_array
     open_address_hash_table
+    order_statistic_tree
     perfect_hashing
     priority_queue
     quantile

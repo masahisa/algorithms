@@ -37,7 +37,7 @@ struct rbt{
  * @param tree the pointer to the tree
  * @param node the pointer to the tree root
  * @param key a searching value
- * @return the pointer of a element that equals to the key or the sentinel
+ * @return the pointer to a element that equals to the key or the sentinel
  */
 const rbt_node* rbt_search(const rbt* tree, const rbt_node* node, int key);
 
@@ -118,19 +118,19 @@ rbt_node* rbt_maximum(const rbt* tree, rbt_node* node);
 
 /**
  * @fn rbt_node* rbt_successor(const rbt* tree, rbt_node* node)
- * @brief get the successor of the node in the red blacktree in O(lgn) time
+ * @brief get the successor of the node in the red black tree in O(lgn) time
  * @param tree the pointer to the tree
  * @param node a subtree rooted at node
- * @return a pointer of the successor of the node
+ * @return a pointer to the successor of the node
  */
 rbt_node* rbt_successor(const rbt* tree, rbt_node* node);
 
 /**
  * @fn rbt_node* rbt_predecessor(const rbt* tree, rbt_node* node)
- * @brief get the predecessor of the node in the red blacktree in O(lgn) time
+ * @brief get the predecessor of the node in the red black tree in O(lgn) time
  * @param tree the pointer to the tree
  * @param node a subtree rooted at node
- * @return a pointer of the predecessor of the node
+ * @return a pointer to the predecessor of the node
  */
 rbt_node* rbt_predecessor(const rbt* tree, rbt_node* node);
 
