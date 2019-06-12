@@ -27,6 +27,7 @@ add_library(horners_rule STATIC "horners_rule.cpp")
 add_library(hybrid_sort STATIC "hybrid_sort.cpp")
 add_library(in_place_sort STATIC "in_place_sort.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
+add_library(interval_tree STATIC "interval_tree.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
 add_library(monge_array STATIC "monge_array.cpp")
@@ -83,6 +84,7 @@ target_link_libraries(
     hybrid_sort
     in_place_sort
     insertion_sort
+    interval_tree
     linear_search
     merge_sort
     monge_array

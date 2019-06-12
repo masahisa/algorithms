@@ -26,6 +26,7 @@ IMPORT_TEST_GROUP(horners_rule);
 IMPORT_TEST_GROUP(hybrid_sort);
 IMPORT_TEST_GROUP(in_place_sort);
 IMPORT_TEST_GROUP(insertion_sort);
+IMPORT_TEST_GROUP(interval_tree);
 IMPORT_TEST_GROUP(linear_search);
 IMPORT_TEST_GROUP(merge_sort);
 IMPORT_TEST_GROUP(monge_array);

@@ -33,6 +33,7 @@ add_executable(
     "test_hybrid_sort.cpp"
     "test_in_place_sort.cpp"
     "test_insertion_sort.cpp"
+    "test_interval_tree.cpp"
     "test_linear_search.cpp"
     "test_merge_sort.cpp"
     "test_monge_array.cpp"
@@ -84,6 +85,7 @@ target_link_libraries(
     hybrid_sort
     in_place_sort
     insertion_sort
+    interval_tree
     linear_search
     merge_sort
     monge_array
