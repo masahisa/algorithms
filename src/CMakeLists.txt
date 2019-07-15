@@ -29,6 +29,7 @@ add_library(in_place_sort STATIC "in_place_sort.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
 add_library(interval_tree STATIC "interval_tree.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
+add_library(longest_common_subsequence STATIC "longest_common_subsequence.cpp")
 add_library(matrix_chain_multiplication STATIC "matrix_chain_multiplication.cpp")
 add_library(merge_sort STATIC "merge_sort.cpp")
 add_library(monge_array STATIC "monge_array.cpp")
@@ -87,6 +88,7 @@ target_link_libraries(
     insertion_sort
     interval_tree
     linear_search
+    longest_common_subsequence
     matrix_chain_multiplication
     merge_sort
     monge_array

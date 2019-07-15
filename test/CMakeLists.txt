@@ -35,6 +35,7 @@ add_executable(
     "test_insertion_sort.cpp"
     "test_interval_tree.cpp"
     "test_linear_search.cpp"
+    "test_longest_common_subsequence.cpp"
     "test_matrix_chain_multiplication.cpp"
     "test_merge_sort.cpp"
     "test_monge_array.cpp"
@@ -88,6 +89,7 @@ target_link_libraries(
     insertion_sort
     interval_tree
     linear_search
+    longest_common_subsequence
     matrix_chain_multiplication
     merge_sort
     monge_array
