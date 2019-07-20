@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 # add library
+add_library(activity_selection STATIC "activity_selection.cpp")
 add_library(add_binary STATIC "add_binary.cpp")
 add_library(average_sort STATIC "average_sort.cpp")
 add_library(binary_insertion_sort STATIC "binary_insertion_sort.cpp")
@@ -61,6 +62,7 @@ add_executable(
 # target link libraries
 target_link_libraries(
     ${PROJECT_NAME}
+    activity_selection
     add_binary
     average_sort
     binary_insertion_sort

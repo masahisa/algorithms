@@ -1,6 +1,7 @@
 #include <CppUTest/CommandLineTestRunner.h>
 
 // IMPORT_TEST_GROUP
+IMPORT_TEST_GROUP(activity_selection);
 IMPORT_TEST_GROUP(add_binary);
 IMPORT_TEST_GROUP(average_sort);
 IMPORT_TEST_GROUP(binary_insertion_sort);

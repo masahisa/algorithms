@@ -7,6 +7,7 @@ set(CPPUTEST_LDFLGAS CppUTest CppUTestExt)
 add_executable(
     run_all_tests
     "run_all_tests.cpp"
+    "test_activity_selection.cpp"
     "test_add_binary.cpp"
     "test_average_sort.cpp"
     "test_binary_insertion_sort.cpp"
@@ -62,6 +63,7 @@ add_executable(
 # target link libraries
 target_link_libraries(
     run_all_tests
+    activity_selection
     add_binary
     average_sort
     binary_insertion_sort
