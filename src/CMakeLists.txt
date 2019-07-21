@@ -25,6 +25,7 @@ add_library(hash_function STATIC "hash_function.cpp")
 add_library(hash_probing STATIC "hash_probing.cpp")
 add_library(heap_sort STATIC "heap_sort.cpp")
 add_library(horners_rule STATIC "horners_rule.cpp")
+add_library(huffman_code STATIC "huffman_code.cpp")
 add_library(hybrid_sort STATIC "hybrid_sort.cpp")
 add_library(in_place_sort STATIC "in_place_sort.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
@@ -86,6 +87,7 @@ target_link_libraries(
     hash_probing
     heap_sort
     horners_rule
+    huffman_code
     hybrid_sort
     in_place_sort
     insertion_sort

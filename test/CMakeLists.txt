@@ -31,6 +31,7 @@ add_executable(
     "test_hash_probing.cpp"
     "test_heap_sort.cpp"
     "test_horners_rule.cpp"
+    "test_huffman_code.cpp"
     "test_hybrid_sort.cpp"
     "test_in_place_sort.cpp"
     "test_insertion_sort.cpp"
@@ -87,6 +88,7 @@ target_link_libraries(
     hash_probing
     heap_sort
     horners_rule
+    huffman_code
     hybrid_sort
     in_place_sort
     insertion_sort

@@ -24,6 +24,7 @@ IMPORT_TEST_GROUP(hash_function);
 IMPORT_TEST_GROUP(hash_probing);
 IMPORT_TEST_GROUP(heap_sort);
 IMPORT_TEST_GROUP(horners_rule);
+IMPORT_TEST_GROUP(huffman_code);
 IMPORT_TEST_GROUP(hybrid_sort);
 IMPORT_TEST_GROUP(in_place_sort);
 IMPORT_TEST_GROUP(insertion_sort);
