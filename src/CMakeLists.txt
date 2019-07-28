@@ -7,6 +7,7 @@ add_library(average_sort STATIC "average_sort.cpp")
 add_library(binary_insertion_sort STATIC "binary_insertion_sort.cpp")
 add_library(binary_search_tree STATIC "binary_search_tree.cpp")
 add_library(binary_search STATIC "binary_search.cpp")
+add_library(breadth_first_search STATIC "breadth_first_search.cpp")
 add_library(bubble_sort STATIC "bubble_sort.cpp")
 add_library(bucket_sort STATIC "bucket_sort.cpp")
 add_library(chained_hash_table STATIC "chained_hash_table.cpp")
@@ -21,6 +22,7 @@ add_library(fibonacci STATIC "fibonacci.cpp")
 add_library(find_maximum_subarray STATIC "find_maximum_subarray.cpp")
 add_library(find_sum_pair STATIC "find_sum_pair.cpp")
 add_library(fuzzy_sort STATIC "fuzzy_sort.cpp")
+add_library(graph STATIC "graph.cpp")
 add_library(hash_function STATIC "hash_function.cpp")
 add_library(hash_probing STATIC "hash_probing.cpp")
 add_library(heap_sort STATIC "heap_sort.cpp")
@@ -69,6 +71,7 @@ target_link_libraries(
     binary_insertion_sort
     binary_search_tree
     binary_search
+    breadth_first_search
     bubble_sort
     bucket_sort
     chained_hash_table
@@ -83,6 +86,7 @@ target_link_libraries(
     find_maximum_subarray
     find_sum_pair
     fuzzy_sort
+    graph
     hash_function
     hash_probing
     heap_sort

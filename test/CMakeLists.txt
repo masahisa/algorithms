@@ -13,6 +13,7 @@ add_executable(
     "test_binary_insertion_sort.cpp"
     "test_binary_search_tree.cpp"
     "test_binary_search.cpp"
+    "test_breadth_first_search.cpp"
     "test_bubble_sort.cpp"
     "test_bucket_sort.cpp"
     "test_chained_hash_table.cpp"
@@ -27,6 +28,7 @@ add_executable(
     "test_find_maximum_subarray.cpp"
     "test_find_sum_pair.cpp"
     "test_fuzzy_sort.cpp"
+    "test_graph.cpp"
     "test_hash_function.cpp"
     "test_hash_probing.cpp"
     "test_heap_sort.cpp"
@@ -70,6 +72,7 @@ target_link_libraries(
     binary_insertion_sort
     binary_search_tree
     binary_search
+    breadth_first_search
     bubble_sort
     bucket_sort
     chained_hash_table
@@ -84,6 +87,7 @@ target_link_libraries(
     find_maximum_subarray
     find_sum_pair
     fuzzy_sort
+    graph
     hash_function
     hash_probing
     heap_sort
