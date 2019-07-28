@@ -50,14 +50,15 @@ TEST(breadth_first_search, breadth_first_search)
 
     breadth_first_search(g, g.vertices[1]);
 
-    CHECK_EQUAL(1, g.vertices[0].distance);
-    CHECK_EQUAL(0, g.vertices[1].distance);
-    CHECK_EQUAL(2, g.vertices[2].distance);
-    CHECK_EQUAL(3, g.vertices[3].distance);
-    CHECK_EQUAL(2, g.vertices[4].distance);
-    CHECK_EQUAL(1, g.vertices[5].distance);
-    CHECK_EQUAL(2, g.vertices[6].distance);
-    CHECK_EQUAL(3, g.vertices[7].distance);
+    CHECK_EQUAL(1, g.vertices[0].d);
+    CHECK_EQUAL(0, g.vertices[1].d);
+    CHECK_EQUAL(2, g.vertices[2].d);
+    CHECK_EQUAL(3, g.vertices[3].d);
+    CHECK_EQUAL(2, g.vertices[4].d);
+    CHECK_EQUAL(1, g.vertices[5].d);
+    CHECK_EQUAL(2, g.vertices[6].d);
+    CHECK_EQUAL(3, g.vertices[7].d);
 
     print_path(g, g.vertices[1], g.vertices[7]);
+    print_path(g, g.vertices[6], g.vertices[3]);
 }

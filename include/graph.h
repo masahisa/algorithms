@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <algorithm>
+#include <iostream>
 
 enum graph_vertex_color{
     white, 
@@ -15,7 +16,8 @@ struct graph_vertex{
     T value;
     std::vector<int> adjacency_list;
     graph_vertex_color color;
-    int distance;
+    int d;
+    int f;
     graph_vertex<T>* pi;
 public:
     graph_vertex(T val)
@@ -54,6 +56,21 @@ void graph_add_edge(graph<T>& graph, const graph_edge& edge)
     graph.vertices[edge.src].adjacency_list[edge.dst] = 1;
     if(!edge.directed){
         graph.vertices[edge.dst].adjacency_list[edge.src] = 1;
+    }
+}
+
+template<typename T>
+void print_path(graph<T>& graph, graph_vertex<T>& s, graph_vertex<T>& v)
+{
+    if(&s == &v){
+        std::cout << s.value << std::endl;
+    }
+    else if(v.pi == nullptr){
+        std::cout << "no path s to v." << std::endl;
+    }
+    else{
+        print_path(graph, s, *v.pi);
+        std::cout << v.value << std::endl;
     }
 }
 
