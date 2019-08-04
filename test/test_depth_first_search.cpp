@@ -39,7 +39,7 @@ TEST(depth_first_search, depth_first_search)
         graph_add_edge(g, edge);
     });
 
-    depth_first_search(g, g.vertices[0]);
+    depth_first_search(g);
 
     CHECK_EQUAL(1, g.vertices[0].d);
     CHECK_EQUAL(8, g.vertices[0].f);

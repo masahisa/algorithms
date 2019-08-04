@@ -1,13 +1,14 @@
-#ifndef DEPTH_FIRST_SEARCH
-#define DEPTH_FIRST_SEARCH
+#ifndef TOPOLOGICAL_SORT_H
+#define TOPOLOGICAL_SORT_H
 
 #include "graph.h"
 
+#include <list>
 #include <algorithm>
 #include <cstdint>
 
 template<typename T>
-void dfs_visit(graph<T>& graph, graph_vertex<T>& u, int& time)
+void dfs_visit_toplogical_sort(graph<T>& graph, graph_vertex<T>& u, int& time, std::list<graph_vertex<T>*>& list)
 {
     time = time + 1;
     u.d = time;
@@ -16,17 +17,18 @@ void dfs_visit(graph<T>& graph, graph_vertex<T>& u, int& time)
         if(u.adjacency_list[v] == 1){
             if(graph.vertices[v].color == white){
                 graph.vertices[v].pi = &u;
-                dfs_visit(graph, graph.vertices[v], time);
+                dfs_visit_toplogical_sort(graph, graph.vertices[v], time, list);
             }
         }
     }
     u.color = black;
     time = time + 1;
     u.f = time;
+    list.push_front(&u);
 }
 
 template<typename T>
-void depth_first_search(graph<T>& graph)
+void topological_sort(graph<T>& graph, std::list<graph_vertex<T>*>& list)
 {
     std::for_each(graph.vertices.begin(), graph.vertices.end(), [&](graph_vertex<T>& vertex) -> void {
         vertex.color = white;
@@ -38,9 +40,9 @@ void depth_first_search(graph<T>& graph)
 
     std::for_each(graph.vertices.begin(), graph.vertices.end(), [&](graph_vertex<T>& vertex) -> void {
         if(vertex.color == white){
-            dfs_visit(graph, vertex, time);
+            dfs_visit_toplogical_sort(graph, vertex, time, list);
         }
     });
 }
 
-#endif // DEPTH_FIRST_SEARCH
+#endif // TOPOLOGICAL_SORT_H

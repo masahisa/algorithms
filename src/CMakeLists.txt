@@ -54,6 +54,7 @@ add_library(selection_sort STATIC "selection_sort.cpp")
 add_library(selection STATIC "selection.cpp")
 add_library(square_matrix_multiply STATIC "square_matrix_multiply.cpp")
 add_library(stack STATIC "stack.cpp")
+add_library(topological_sort STATIC "topological_sort.cpp")
 add_library(water_jugs STATIC "water_jugs.cpp")
 add_library(young_tableau STATIC "young_tableau.cpp")
 
@@ -119,6 +120,7 @@ target_link_libraries(
     selection
     square_matrix_multiply
     stack
+    topological_sort
     water_jugs
     young_tableau
 )
