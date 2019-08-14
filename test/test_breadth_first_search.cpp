@@ -1,10 +1,6 @@
 #include <CppUTest/TestHarness.h>
 #include "breadth_first_search.h"
 
-#include <vector>
-#include <algorithm>
-//#include <map> // compile error occurs when std::map is included.
-
 TEST_GROUP(breadth_first_search)
 {
     void setup(){
@@ -18,35 +14,26 @@ TEST_GROUP(breadth_first_search)
 TEST(breadth_first_search, breadth_first_search)
 {
     graph<char> g;
-    std::vector<graph_vertex<char>> vertices;
-    vertices.push_back(graph_vertex<char>{ 'r' });
-    vertices.push_back(graph_vertex<char>{ 's' });
-    vertices.push_back(graph_vertex<char>{ 't' });
-    vertices.push_back(graph_vertex<char>{ 'u' });
-    vertices.push_back(graph_vertex<char>{ 'v' });
-    vertices.push_back(graph_vertex<char>{ 'w' });
-    vertices.push_back(graph_vertex<char>{ 'x' });
-    vertices.push_back(graph_vertex<char>{ 'y' });
-
-    std::for_each(vertices.begin(), vertices.end(), [&](graph_vertex<char>& vertex) -> void {
-        graph_add_vertex(g, vertex);
-    });
-
-    std::vector<graph_edge> edges;
-    edges.push_back(graph_edge{ 0, 1, 1, false });
-    edges.push_back(graph_edge{ 0, 4, 1, false });
-    edges.push_back(graph_edge{ 1, 5, 1, false });
-    edges.push_back(graph_edge{ 2, 3, 1, false });
-    edges.push_back(graph_edge{ 2, 5, 1, false });
-    edges.push_back(graph_edge{ 2, 6, 1, false });
-    edges.push_back(graph_edge{ 3, 6, 1, false });
-    edges.push_back(graph_edge{ 3, 7, 1, false });
-    edges.push_back(graph_edge{ 5, 6, 1, false });
-    edges.push_back(graph_edge{ 6, 7, 1, false });
-
-    std::for_each(edges.begin(), edges.end(), [&](graph_edge& edge) -> void {
-        graph_add_edge(g, edge);
-    });
+    
+    graph_add_vertex(g, 'r');
+    graph_add_vertex(g, 's');
+    graph_add_vertex(g, 't');
+    graph_add_vertex(g, 'u');
+    graph_add_vertex(g, 'v');
+    graph_add_vertex(g, 'w');
+    graph_add_vertex(g, 'x');
+    graph_add_vertex(g, 'y');
+    
+    graph_add_edge(g, graph_edge{ 0, 1, 1, false });
+    graph_add_edge(g, graph_edge{ 0, 4, 1, false });
+    graph_add_edge(g, graph_edge{ 1, 5, 1, false });
+    graph_add_edge(g, graph_edge{ 2, 3, 1, false });
+    graph_add_edge(g, graph_edge{ 2, 5, 1, false });
+    graph_add_edge(g, graph_edge{ 2, 6, 1, false });
+    graph_add_edge(g, graph_edge{ 3, 6, 1, false });
+    graph_add_edge(g, graph_edge{ 3, 7, 1, false });
+    graph_add_edge(g, graph_edge{ 5, 6, 1, false });
+    graph_add_edge(g, graph_edge{ 6, 7, 1, false });
 
     breadth_first_search(g, g.vertices[1]);
 

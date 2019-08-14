@@ -53,6 +53,7 @@ IMPORT_TEST_GROUP(selection_sort);
 IMPORT_TEST_GROUP(selection);
 IMPORT_TEST_GROUP(square_matrix_multiply);
 IMPORT_TEST_GROUP(stack);
+IMPORT_TEST_GROUP(strongly_connected_components);
 IMPORT_TEST_GROUP(topological_sort);
 IMPORT_TEST_GROUP(water_jugs);
 IMPORT_TEST_GROUP(young_tableau);

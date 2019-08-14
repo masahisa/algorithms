@@ -8,9 +8,9 @@
 #include <queue>
 
 template<typename T>
-void breadth_first_search(graph<T>& graph, graph_vertex<T>& s)
+void breadth_first_search(graph<T>& g, graph_vertex<T>& s)
 {
-    std::for_each(graph.vertices.begin(), graph.vertices.end(), [&](graph_vertex<T>& vertex) -> void {
+    std::for_each(g.vertices.begin(), g.vertices.end(), [&](graph_vertex<T>& vertex) -> void {
         vertex.color = white;
         vertex.d = INT32_MAX;
         vertex.pi = nullptr;
@@ -27,11 +27,11 @@ void breadth_first_search(graph<T>& graph, graph_vertex<T>& s)
         q.pop();
         for(unsigned int v = 0; v < u->adjacency_list.size(); v++){
             if(u->adjacency_list[v] == 1){
-                if(graph.vertices[v].color == white){
-                    graph.vertices[v].color = gray;
-                    graph.vertices[v].d = u->d + 1;
-                    graph.vertices[v].pi = u;
-                    q.push(&graph.vertices[v]);
+                if(g.vertices[v].color == white){
+                    g.vertices[v].color = gray;
+                    g.vertices[v].d = u->d + 1;
+                    g.vertices[v].pi = u;
+                    q.push(&g.vertices[v]);
                 }
             }
         }

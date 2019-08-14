@@ -19,6 +19,7 @@ struct graph_vertex{
     int d;
     int f;
     graph_vertex<T>* pi;
+    int index;
 public:
     graph_vertex(T val)
     : value{ val }
@@ -39,28 +40,45 @@ struct graph{
 };
 
 template<typename T>
-void graph_add_vertex(graph<T>& graph, const graph_vertex<T>& vertex)
+void graph_add_vertex(graph<T>& g, const T& val)
 {
-    graph.vertices.push_back(vertex);
-    std::for_each(graph.vertices.begin(), graph.vertices.end(), [&](graph_vertex<T>& v) -> void {
-        while(v.adjacency_list.size() != graph.vertices.size()){
+    g.vertices.push_back(graph_vertex<T>(val));
+    g.vertices.back().index = g.vertices.size() - 1;
+    std::for_each(g.vertices.begin(), g.vertices.end(), [&](graph_vertex<T>& v) -> void {
+        while(v.adjacency_list.size() != g.vertices.size()){
             v.adjacency_list.push_back(0);
         }
     });
 }
 
 template<typename T>
-void graph_add_edge(graph<T>& graph, const graph_edge& edge)
+void graph_add_edge(graph<T>& g, const graph_edge& edge)
 {
-    graph.edges.push_back(edge);
-    graph.vertices[edge.src].adjacency_list[edge.dst] = 1;
+    g.edges.push_back(edge);
+    g.vertices[edge.src].adjacency_list[edge.dst] = 1;
     if(!edge.directed){
-        graph.vertices[edge.dst].adjacency_list[edge.src] = 1;
+        g.vertices[edge.dst].adjacency_list[edge.src] = 1;
     }
 }
 
 template<typename T>
-void print_path(graph<T>& graph, graph_vertex<T>& s, graph_vertex<T>& v)
+void graph_transpose(const graph<T>& graph_in, graph<T>& graph_transposed)
+{
+    // vertex
+    std::for_each(graph_in.vertices.begin(), graph_in.vertices.end(), [&](const graph_vertex<T>& v) -> void {
+        graph_add_vertex(graph_transposed, v.value);
+    });
+
+    // edge
+    std::for_each(graph_in.edges.begin(), graph_in.edges.end(), [&](const graph_edge& e) -> void{
+        graph_edge edge = e;
+        std::swap(edge.src, edge.dst);
+        graph_add_edge(graph_transposed, edge);
+    });
+}
+
+template<typename T>
+void print_path(graph<T>& g, graph_vertex<T>& s, graph_vertex<T>& v)
 {
     if(&s == &v){
         std::cout << s.value << std::endl;
@@ -69,7 +87,7 @@ void print_path(graph<T>& graph, graph_vertex<T>& s, graph_vertex<T>& v)
         std::cout << "no path s to v." << std::endl;
     }
     else{
-        print_path(graph, s, *v.pi);
+        print_path(g, s, *v.pi);
         std::cout << v.value << std::endl;
     }
 }

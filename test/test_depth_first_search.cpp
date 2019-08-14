@@ -14,30 +14,21 @@ TEST_GROUP(depth_first_search)
 TEST(depth_first_search, depth_first_search)
 {
     graph<char> g;
-    std::vector<graph_vertex<char>> vertices;
-    vertices.push_back(graph_vertex<char>{ 'u' });
-    vertices.push_back(graph_vertex<char>{ 'v' });
-    vertices.push_back(graph_vertex<char>{ 'w' });
-    vertices.push_back(graph_vertex<char>{ 'x' });
-    vertices.push_back(graph_vertex<char>{ 'y' });
-    vertices.push_back(graph_vertex<char>{ 'z' });
-
-    std::for_each(vertices.begin(), vertices.end(), [&](graph_vertex<char>& vertex) -> void {
-        graph_add_vertex(g, vertex);
-    });
-
-    std::vector<graph_edge> edges;
-    edges.push_back(graph_edge{ 0, 1, 1, true });
-    edges.push_back(graph_edge{ 0, 3, 1, true });
-    edges.push_back(graph_edge{ 1, 4, 1, true });
-    edges.push_back(graph_edge{ 2, 4, 1, true });
-    edges.push_back(graph_edge{ 2, 5, 1, true });
-    edges.push_back(graph_edge{ 3, 1, 1, true });
-    edges.push_back(graph_edge{ 4, 3, 1, true });
-
-    std::for_each(edges.begin(), edges.end(), [&](graph_edge& edge) -> void {
-        graph_add_edge(g, edge);
-    });
+    
+    graph_add_vertex(g, 'u');
+    graph_add_vertex(g, 'v');
+    graph_add_vertex(g, 'w');
+    graph_add_vertex(g, 'x');
+    graph_add_vertex(g, 'y');
+    graph_add_vertex(g, 'z');
+    
+    graph_add_edge(g, graph_edge{ 0, 1, 1, true });
+    graph_add_edge(g, graph_edge{ 0, 3, 1, true });
+    graph_add_edge(g, graph_edge{ 1, 4, 1, true });
+    graph_add_edge(g, graph_edge{ 2, 4, 1, true });
+    graph_add_edge(g, graph_edge{ 2, 5, 1, true });
+    graph_add_edge(g, graph_edge{ 3, 1, 1, true });
+    graph_add_edge(g, graph_edge{ 4, 3, 1, true });
 
     depth_first_search(g);
 

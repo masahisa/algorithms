@@ -60,6 +60,7 @@ add_executable(
     "test_selection.cpp"
     "test_square_matrix_multiply.cpp"
     "test_stack.cpp"
+    "test_strongly_connected_components.cpp"
     "test_topological_sort.cpp"
     "test_water_jugs.cpp"
     "test_young_tableau.cpp"
@@ -121,6 +122,7 @@ target_link_libraries(
     selection
     square_matrix_multiply
     stack
+    strongly_connected_components
     topological_sort
     water_jugs
     young_tableau
