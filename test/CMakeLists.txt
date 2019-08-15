@@ -39,6 +39,7 @@ add_executable(
     "test_in_place_sort.cpp"
     "test_insertion_sort.cpp"
     "test_interval_tree.cpp"
+    "test_kruskal.cpp"
     "test_linear_search.cpp"
     "test_longest_common_subsequence.cpp"
     "test_matrix_chain_multiplication.cpp"
@@ -62,6 +63,7 @@ add_executable(
     "test_stack.cpp"
     "test_strongly_connected_components.cpp"
     "test_topological_sort.cpp"
+    "test_union_find.cpp"
     "test_water_jugs.cpp"
     "test_young_tableau.cpp"
 )
@@ -101,6 +103,7 @@ target_link_libraries(
     in_place_sort
     insertion_sort
     interval_tree
+    kruskal
     linear_search
     longest_common_subsequence
     matrix_chain_multiplication
@@ -124,6 +127,7 @@ target_link_libraries(
     stack
     strongly_connected_components
     topological_sort
+    union_find
     water_jugs
     young_tableau
     ${CPPUTEST_LDFLGAS}

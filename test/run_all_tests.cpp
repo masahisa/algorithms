@@ -32,6 +32,7 @@ IMPORT_TEST_GROUP(hybrid_sort);
 IMPORT_TEST_GROUP(in_place_sort);
 IMPORT_TEST_GROUP(insertion_sort);
 IMPORT_TEST_GROUP(interval_tree);
+IMPORT_TEST_GROUP(kruskal);
 IMPORT_TEST_GROUP(linear_search);
 IMPORT_TEST_GROUP(longest_common_subsequence);
 IMPORT_TEST_GROUP(matrix_chain_multiplication);
@@ -55,6 +56,7 @@ IMPORT_TEST_GROUP(square_matrix_multiply);
 IMPORT_TEST_GROUP(stack);
 IMPORT_TEST_GROUP(strongly_connected_components);
 IMPORT_TEST_GROUP(topological_sort);
+IMPORT_TEST_GROUP(union_find);
 IMPORT_TEST_GROUP(water_jugs);
 IMPORT_TEST_GROUP(young_tableau);
 

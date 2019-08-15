@@ -33,6 +33,7 @@ add_library(hybrid_sort STATIC "hybrid_sort.cpp")
 add_library(in_place_sort STATIC "in_place_sort.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
 add_library(interval_tree STATIC "interval_tree.cpp")
+add_library(kruskal STATIC "kruskal.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
 add_library(longest_common_subsequence STATIC "longest_common_subsequence.cpp")
 add_library(matrix_chain_multiplication STATIC "matrix_chain_multiplication.cpp")
@@ -56,6 +57,7 @@ add_library(square_matrix_multiply STATIC "square_matrix_multiply.cpp")
 add_library(stack STATIC "stack.cpp")
 add_library(strongly_connected_components STATIC "strongly_connected_components.cpp")
 add_library(topological_sort STATIC "topological_sort.cpp")
+add_library(union_find STATIC "union_find.cpp")
 add_library(water_jugs STATIC "water_jugs.cpp")
 add_library(young_tableau STATIC "young_tableau.cpp")
 
@@ -100,6 +102,7 @@ target_link_libraries(
     in_place_sort
     insertion_sort
     interval_tree
+    kruskal
     linear_search
     longest_common_subsequence
     matrix_chain_multiplication
@@ -123,6 +126,7 @@ target_link_libraries(
     stack
     strongly_connected_components
     topological_sort
+    union_find
     water_jugs
     young_tableau
 )
