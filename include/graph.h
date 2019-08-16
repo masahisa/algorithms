@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#include <cstdint>
 
 enum graph_vertex_color{
     white, 
@@ -15,6 +16,7 @@ template<typename T>
 struct graph_vertex{
     T value;
     std::vector<int> adjacency_list;
+    std::vector<int> weight;
     graph_vertex_color color;
     int d;
     int f;
@@ -48,6 +50,7 @@ void graph_add_vertex(graph<T>& g, const T& val)
     std::for_each(g.vertices.begin(), g.vertices.end(), [&](graph_vertex<T>& v) -> void {
         while(v.adjacency_list.size() != g.vertices.size()){
             v.adjacency_list.push_back(0);
+            v.weight.push_back(INT32_MAX);
         }
     });
 }
@@ -56,9 +59,11 @@ template<typename T>
 void graph_add_edge(graph<T>& g, const graph_edge& edge)
 {
     g.edges.push_back(edge);
-    g.vertices[edge.src].adjacency_list[edge.dst] = edge.weight;
+    g.vertices[edge.src].adjacency_list[edge.dst] = 1;
+    g.vertices[edge.src].weight[edge.dst] = edge.weight;
     if(!edge.directed){
-        g.vertices[edge.dst].adjacency_list[edge.src] = edge.weight;
+        g.vertices[edge.dst].adjacency_list[edge.src] = 1;
+        g.vertices[edge.dst].weight[edge.src] = edge.weight;
     }
 }
 

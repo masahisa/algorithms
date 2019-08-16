@@ -13,7 +13,7 @@ void dfs_visit(graph<T>& g, graph_vertex<T>& u, int& time)
     u.d = time;
     u.color = gray;
     for(unsigned int v = 0; v < u.adjacency_list.size(); v++){
-        if(u.adjacency_list[v] != 0){
+        if(u.adjacency_list[v] == 1){
             if(g.vertices[v].color == white){
                 g.vertices[v].pi = &u;
                 dfs_visit(g, g.vertices[v], time);

@@ -26,7 +26,7 @@ void breadth_first_search(graph<T>& g, graph_vertex<T>& s)
         graph_vertex<T>* u = q.front();
         q.pop();
         for(unsigned int v = 0; v < u->adjacency_list.size(); v++){
-            if(u->adjacency_list[v] != 0){
+            if(u->adjacency_list[v] == 1){
                 if(g.vertices[v].color == white){
                     g.vertices[v].color = gray;
                     g.vertices[v].d = u->d + 1;
