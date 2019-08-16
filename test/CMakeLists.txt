@@ -10,6 +10,7 @@ add_executable(
     "test_activity_selection.cpp"
     "test_add_binary.cpp"
     "test_average_sort.cpp"
+    "test_bellman_ford.cpp"
     "test_binary_insertion_sort.cpp"
     "test_binary_search_tree.cpp"
     "test_binary_search.cpp"
@@ -75,6 +76,7 @@ target_link_libraries(
     activity_selection
     add_binary
     average_sort
+    bellman_ford
     binary_insertion_sort
     binary_search_tree
     binary_search

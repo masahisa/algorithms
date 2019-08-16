@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 add_library(activity_selection STATIC "activity_selection.cpp")
 add_library(add_binary STATIC "add_binary.cpp")
 add_library(average_sort STATIC "average_sort.cpp")
+add_library(bellman_ford STATIC "bellman_ford.cpp")
 add_library(binary_insertion_sort STATIC "binary_insertion_sort.cpp")
 add_library(binary_search_tree STATIC "binary_search_tree.cpp")
 add_library(binary_search STATIC "binary_search.cpp")
@@ -74,6 +75,7 @@ target_link_libraries(
     activity_selection
     add_binary
     average_sort
+    bellman_ford
     binary_insertion_sort
     binary_search_tree
     binary_search

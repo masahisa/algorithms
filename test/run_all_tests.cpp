@@ -4,6 +4,7 @@
 IMPORT_TEST_GROUP(activity_selection);
 IMPORT_TEST_GROUP(add_binary);
 IMPORT_TEST_GROUP(average_sort);
+IMPORT_TEST_GROUP(bellman_ford);
 IMPORT_TEST_GROUP(binary_insertion_sort);
 IMPORT_TEST_GROUP(binary_search_tree);
 IMPORT_TEST_GROUP(binary_search);
