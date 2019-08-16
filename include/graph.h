@@ -20,6 +20,7 @@ struct graph_vertex{
     int f;
     graph_vertex<T>* pi;
     int index;
+    int key;
 public:
     graph_vertex(T val)
     : value{ val }
@@ -55,9 +56,9 @@ template<typename T>
 void graph_add_edge(graph<T>& g, const graph_edge& edge)
 {
     g.edges.push_back(edge);
-    g.vertices[edge.src].adjacency_list[edge.dst] = 1;
+    g.vertices[edge.src].adjacency_list[edge.dst] = edge.weight;
     if(!edge.directed){
-        g.vertices[edge.dst].adjacency_list[edge.src] = 1;
+        g.vertices[edge.dst].adjacency_list[edge.src] = edge.weight;
     }
 }
 

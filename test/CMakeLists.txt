@@ -49,6 +49,7 @@ add_executable(
     "test_optimal_binary_search_tree.cpp"
     "test_order_statistic_tree.cpp"
     "test_perfect_hashing.cpp"
+    "test_prim.cpp"
     "test_priority_queue.cpp"
     "test_quantile.cpp"
     "test_queue.cpp"
@@ -113,6 +114,7 @@ target_link_libraries(
     optimal_binary_search_tree
     order_statistic_tree
     perfect_hashing
+    prim
     priority_queue
     quantile
     queue

@@ -42,6 +42,7 @@ IMPORT_TEST_GROUP(open_address_hash_table);
 IMPORT_TEST_GROUP(optimal_binary_search_tree);
 IMPORT_TEST_GROUP(order_statistic_tree);
 IMPORT_TEST_GROUP(perfect_hashing);
+IMPORT_TEST_GROUP(prim);
 IMPORT_TEST_GROUP(priority_queue);
 IMPORT_TEST_GROUP(quantile);
 IMPORT_TEST_GROUP(queue);

@@ -43,6 +43,7 @@ add_library(open_address_hash_table STATIC "open_address_hash_table.cpp")
 add_library(optimal_binary_search_tree STATIC "optimal_binary_search_tree.cpp")
 add_library(order_statistic_tree STATIC "order_statistic_tree.cpp")
 add_library(perfect_hashing STATIC "perfect_hashing.cpp")
+add_library(prim STATIC "prim.cpp")
 add_library(priority_queue STATIC "priority_queue.cpp")
 add_library(quantile STATIC "quantile.cpp")
 add_library(queue STATIC "queue.cpp")
@@ -112,6 +113,7 @@ target_link_libraries(
     optimal_binary_search_tree
     order_statistic_tree
     perfect_hashing
+    prim
     priority_queue
     quantile
     queue

@@ -14,7 +14,7 @@ void dfs_visit_toplogical_sort(graph<T>& g, graph_vertex<T>& u, int& time, std::
     u.d = time;
     u.color = gray;
     for(unsigned int v = 0; v < u.adjacency_list.size(); v++){
-        if(u.adjacency_list[v] == 1){
+        if(u.adjacency_list[v] != 0){
             if(g.vertices[v].color == white){
                 g.vertices[v].pi = &u;
                 dfs_visit_toplogical_sort(g, g.vertices[v], time, l);
