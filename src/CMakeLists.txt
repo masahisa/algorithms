@@ -20,6 +20,7 @@ add_library(d_ary_heap STATIC "d_ary_heap.cpp")
 add_library(dag_shortest_paths STATIC "dag_shortest_paths.cpp")
 add_library(depth_first_search STATIC "depth_first_search.cpp")
 add_library(deque STATIC "deque.cpp")
+add_library(dijkstra STATIC "dijkstra.cpp")
 add_library(doubly_linked_list STATIC "doubly_linked_list.cpp")
 add_library(fibonacci STATIC "fibonacci.cpp")
 add_library(find_maximum_subarray STATIC "find_maximum_subarray.cpp")
@@ -92,6 +93,7 @@ target_link_libraries(
     dag_shortest_paths
     depth_first_search
     deque
+    dijkstra
     doubly_linked_list
     fibonacci
     find_maximum_subarray

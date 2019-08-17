@@ -26,6 +26,7 @@ add_executable(
     "test_dag_shortest_paths.cpp"
     "test_depth_first_search.cpp"
     "test_deque.cpp"
+    "test_dijkstra.cpp"
     "test_doubly_linked_list.cpp"
     "test_fibonacci.cpp"
     "test_find_maximum_subarray.cpp"
@@ -93,6 +94,7 @@ target_link_libraries(
     dag_shortest_paths
     depth_first_search
     deque
+    dijkstra
     doubly_linked_list
     fibonacci
     find_maximum_subarray
