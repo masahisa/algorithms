@@ -33,7 +33,7 @@ TEST(bellman_ford, bellman_ford)
     graph_add_edge(g, graph_edge{ 4, 0, 2, true });
 
     bool result = bellman_ford(g, g.vertices[0]);
-    std::cout << "path of s to z: " << std::endl;
+    std::cout << "bellman ford shortest path of s to z: " << std::endl;
     print_path(g, g.vertices[0], g.vertices[4]);
 
     CHECK_TRUE(result);

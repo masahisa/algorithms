@@ -16,6 +16,7 @@ IMPORT_TEST_GROUP(count_in_range);
 IMPORT_TEST_GROUP(count_inversions);
 IMPORT_TEST_GROUP(counting_sort);
 IMPORT_TEST_GROUP(d_ary_heap);
+IMPORT_TEST_GROUP(dag_shortest_paths);
 IMPORT_TEST_GROUP(depth_first_search);
 IMPORT_TEST_GROUP(deque);
 IMPORT_TEST_GROUP(doubly_linked_list);

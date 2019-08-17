@@ -98,4 +98,29 @@ void print_path(graph<T>& g, graph_vertex<T>& s, graph_vertex<T>& v)
     }
 }
 
+template<typename T>
+void initialize_single_source(graph<T>& g, graph_vertex<T>& s)
+{
+    std::for_each(g.vertices.begin(), g.vertices.end(), [&](graph_vertex<T>& v) -> void {
+        v.d = INT32_MAX;
+        v.pi = nullptr;
+    });
+    s.d = 0;
+}
+
+template<typename T>
+void relax(graph_vertex<T>& u, graph_vertex<T>& v)
+{
+    // check overflow
+    int64_t sum = (int64_t)u.d + (int64_t)u.weight[v.index];
+    if(sum > (int64_t)INT32_MAX){
+        return;
+    }
+
+    if(v.d > u.d + u.weight[v.index]){
+        v.d = u.d + u.weight[v.index];
+        v.pi = &u;
+    }
+}
+
 #endif // GRAPH_H

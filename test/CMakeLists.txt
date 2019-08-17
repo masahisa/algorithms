@@ -23,6 +23,7 @@ add_executable(
     "test_count_inversions.cpp"
     "test_counting_sort.cpp"
     "test_d_ary_heap.cpp"
+    "test_dag_shortest_paths.cpp"
     "test_depth_first_search.cpp"
     "test_deque.cpp"
     "test_doubly_linked_list.cpp"
@@ -89,6 +90,7 @@ target_link_libraries(
     count_inversions
     counting_sort
     d_ary_heap
+    dag_shortest_paths
     depth_first_search
     deque
     doubly_linked_list

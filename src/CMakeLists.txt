@@ -17,6 +17,7 @@ add_library(count_in_range STATIC "count_in_range.cpp")
 add_library(count_inversions STATIC "count_inversions.cpp")
 add_library(counting_sort STATIC "counting_sort.cpp")
 add_library(d_ary_heap STATIC "d_ary_heap.cpp")
+add_library(dag_shortest_paths STATIC "dag_shortest_paths.cpp")
 add_library(depth_first_search STATIC "depth_first_search.cpp")
 add_library(deque STATIC "deque.cpp")
 add_library(doubly_linked_list STATIC "doubly_linked_list.cpp")
@@ -88,6 +89,7 @@ target_link_libraries(
     count_inversions
     counting_sort
     d_ary_heap
+    dag_shortest_paths
     depth_first_search
     deque
     doubly_linked_list
