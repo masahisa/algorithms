@@ -93,3 +93,27 @@ TEST(floyd_warshall, floyd_warshall)
     CHECK_EQUAL(4, p[4][3]);
     CHECK_EQUAL(INT32_MAX, p[4][4]);
 }
+
+TEST(floyd_warshall, transitive_closure)
+{
+    graph<int> g;
+    
+    graph_add_vertex(g, 1);   // 0
+    graph_add_vertex(g, 2);   // 1
+    graph_add_vertex(g, 3);   // 2
+    graph_add_vertex(g, 4);   // 3
+
+    graph_add_edge(g, graph_edge{ 1, 2, 1, true });
+    graph_add_edge(g, graph_edge{ 1, 3, 1, true });
+    graph_add_edge(g, graph_edge{ 2, 1, 1, true });
+    graph_add_edge(g, graph_edge{ 3, 0, 1, true });
+    graph_add_edge(g, graph_edge{ 3, 2, 1, true });
+
+    std::vector<std::vector<int>> d;
+    std::vector<std::vector<int>> p;
+    floyd_warshall(g, d, p);
+
+    CHECK_EQUAL(INT32_MAX, d[0][1]);
+    CHECK_EQUAL(INT32_MAX, d[0][2]);
+    CHECK_EQUAL(INT32_MAX, d[0][3]);
+}
