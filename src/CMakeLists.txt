@@ -25,6 +25,7 @@ add_library(doubly_linked_list STATIC "doubly_linked_list.cpp")
 add_library(fibonacci STATIC "fibonacci.cpp")
 add_library(find_maximum_subarray STATIC "find_maximum_subarray.cpp")
 add_library(find_sum_pair STATIC "find_sum_pair.cpp")
+add_library(floyd_warshall STATIC "floyd_warshall.cpp")
 add_library(fuzzy_sort STATIC "fuzzy_sort.cpp")
 add_library(graph STATIC "graph.cpp")
 add_library(hash_function STATIC "hash_function.cpp")
@@ -98,6 +99,7 @@ target_link_libraries(
     fibonacci
     find_maximum_subarray
     find_sum_pair
+    floyd_warshall
     fuzzy_sort
     graph
     hash_function

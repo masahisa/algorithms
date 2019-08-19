@@ -31,6 +31,7 @@ add_executable(
     "test_fibonacci.cpp"
     "test_find_maximum_subarray.cpp"
     "test_find_sum_pair.cpp"
+    "test_floyd_warshall.cpp"
     "test_fuzzy_sort.cpp"
     "test_graph.cpp"
     "test_hash_function.cpp"
@@ -99,6 +100,7 @@ target_link_libraries(
     fibonacci
     find_maximum_subarray
     find_sum_pair
+    floyd_warshall
     fuzzy_sort
     graph
     hash_function

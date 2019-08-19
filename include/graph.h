@@ -50,7 +50,11 @@ void graph_add_vertex(graph<T>& g, const T& val)
     std::for_each(g.vertices.begin(), g.vertices.end(), [&](graph_vertex<T>& v) -> void {
         while(v.adjacency_list.size() != g.vertices.size()){
             v.adjacency_list.push_back(0);
-            v.weight.push_back(INT32_MAX);
+            int weight = INT32_MAX;
+            if(v.index + 1 == static_cast<int>(v.adjacency_list.size())){
+                weight = 0;
+            }
+            v.weight.push_back(weight);
         }
     });
 }
@@ -122,5 +126,7 @@ void relax(graph_vertex<T>& u, graph_vertex<T>& v)
         v.pi = &u;
     }
 }
+
+void print_all_pairs_shortest_path(const std::vector<std::vector<int>>& p, int i, int j);
 
 #endif // GRAPH_H
