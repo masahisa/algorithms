@@ -37,6 +37,7 @@ add_library(hybrid_sort STATIC "hybrid_sort.cpp")
 add_library(in_place_sort STATIC "in_place_sort.cpp")
 add_library(insertion_sort STATIC "insertion_sort.cpp")
 add_library(interval_tree STATIC "interval_tree.cpp")
+add_library(johnson STATIC "johnson.cpp")
 add_library(kruskal STATIC "kruskal.cpp")
 add_library(linear_search STATIC "linear_search.cpp")
 add_library(longest_common_subsequence STATIC "longest_common_subsequence.cpp")
@@ -111,6 +112,7 @@ target_link_libraries(
     in_place_sort
     insertion_sort
     interval_tree
+    johnson
     kruskal
     linear_search
     longest_common_subsequence

@@ -43,6 +43,7 @@ add_executable(
     "test_in_place_sort.cpp"
     "test_insertion_sort.cpp"
     "test_interval_tree.cpp"
+    "test_johnson.cpp"
     "test_kruskal.cpp"
     "test_linear_search.cpp"
     "test_longest_common_subsequence.cpp"
@@ -112,6 +113,7 @@ target_link_libraries(
     in_place_sort
     insertion_sort
     interval_tree
+    johnson
     kruskal
     linear_search
     longest_common_subsequence

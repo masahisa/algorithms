@@ -36,6 +36,7 @@ IMPORT_TEST_GROUP(hybrid_sort);
 IMPORT_TEST_GROUP(in_place_sort);
 IMPORT_TEST_GROUP(insertion_sort);
 IMPORT_TEST_GROUP(interval_tree);
+IMPORT_TEST_GROUP(johnson);
 IMPORT_TEST_GROUP(kruskal);
 IMPORT_TEST_GROUP(linear_search);
 IMPORT_TEST_GROUP(longest_common_subsequence);
