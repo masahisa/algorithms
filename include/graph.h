@@ -17,6 +17,7 @@ struct graph_vertex{
     T value;
     std::vector<int> adjacency_list;
     std::vector<int> weight;
+    std::vector<int> flow;
     graph_vertex_color color;
     int d;
     int f;
@@ -32,7 +33,7 @@ public:
 struct graph_edge{
     int src;
     int dst;
-    int weight;
+    int weight;     // if graph is flow network, weight is same as residual capacity
     bool directed;
 };
 
@@ -43,7 +44,7 @@ struct graph{
 };
 
 template<typename T>
-void graph_add_vertex(graph<T>& g, const T& val)
+void graph_add_vertex(graph<T>& g, const T& val, bool is_flow = false)
 {
     g.vertices.push_back(graph_vertex<T>(val));
     g.vertices.back().index = g.vertices.size() - 1;
@@ -51,10 +52,11 @@ void graph_add_vertex(graph<T>& g, const T& val)
         while(v.adjacency_list.size() != g.vertices.size()){
             v.adjacency_list.push_back(0);
             int weight = INT32_MAX;
-            if(v.index + 1 == static_cast<int>(v.adjacency_list.size())){
+            if(is_flow || v.index + 1 == static_cast<int>(v.adjacency_list.size())){
                 weight = 0;
             }
             v.weight.push_back(weight);
+            v.flow.push_back(0);
         }
     });
 }
@@ -99,6 +101,61 @@ void print_path(graph<T>& g, graph_vertex<T>& s, graph_vertex<T>& v)
     else{
         print_path(g, s, *v.pi);
         std::cout << v.value << std::endl;
+    }
+}
+
+template<typename T>
+bool path_exist(graph<T>& g, graph_vertex<T>& s, graph_vertex<T>& v)
+{
+    if(&s == &v){
+        return true;
+    }
+    else if(v.pi == nullptr){
+        return false;
+    }
+    else{
+        return path_exist(g, s, *v.pi);
+    }
+}
+
+template<typename T>
+int residual_capacity(graph<T>& g, graph_vertex<T>& s, graph_vertex<T>& v)
+{
+    if(&s == &v){
+        return INT32_MAX;
+    }
+    else{
+        return std::min<int>(residual_capacity(g, s, *v.pi), g.vertices[v.pi->index].weight[v.index]);
+    }
+}
+
+template<typename T>
+void augment_flow_along_path(graph<T>& g, graph<T>& gf, graph_vertex<T>& s, graph_vertex<T>& v, int cf)
+{
+    if(&s == &v){
+        return;
+    }
+    else{
+        if(g.vertices[v.pi->index].adjacency_list[v.index] == 1){
+            g.vertices[v.pi->index].flow[v.index] += cf;
+        }
+        else{
+            g.vertices[v.pi->index].flow[v.index] -= cf;
+        }
+
+        // update the residual capacity of an edge v.pi-> v
+        gf.vertices[v.pi->index].weight[v.index] -= cf;
+        if(gf.vertices[v.pi->index].weight[v.index] == 0){
+            gf.vertices[v.pi->index].adjacency_list[v.index] = 0;
+        }
+
+        // update the residual capacity of an edge v -> v.pi
+        if(gf.vertices[v.index].weight[v.pi->index] == 0){
+            gf.vertices[v.index].adjacency_list[v.pi->index] = 1;
+        }
+        gf.vertices[v.index].weight[v.pi->index] += cf;
+
+        augment_flow_along_path(g, gf, s, *v.pi, cf);
     }
 }
 

@@ -32,6 +32,7 @@ add_executable(
     "test_find_maximum_subarray.cpp"
     "test_find_sum_pair.cpp"
     "test_floyd_warshall.cpp"
+    "test_ford_fulkerson.cpp"
     "test_fuzzy_sort.cpp"
     "test_graph.cpp"
     "test_hash_function.cpp"
@@ -102,6 +103,7 @@ target_link_libraries(
     find_maximum_subarray
     find_sum_pair
     floyd_warshall
+    ford_fulkerson
     fuzzy_sort
     graph
     hash_function

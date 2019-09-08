@@ -25,6 +25,7 @@ IMPORT_TEST_GROUP(fibonacci);
 IMPORT_TEST_GROUP(find_maximum_subarray);
 IMPORT_TEST_GROUP(find_sum_pair);
 IMPORT_TEST_GROUP(floyd_warshall);
+IMPORT_TEST_GROUP(ford_fulkerson);
 IMPORT_TEST_GROUP(fuzzy_sort);
 IMPORT_TEST_GROUP(graph);
 IMPORT_TEST_GROUP(hash_function);
