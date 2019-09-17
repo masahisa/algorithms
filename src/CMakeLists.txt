@@ -51,6 +51,7 @@ add_library(order_statistic_tree STATIC "order_statistic_tree.cpp")
 add_library(perfect_hashing STATIC "perfect_hashing.cpp")
 add_library(prim STATIC "prim.cpp")
 add_library(priority_queue STATIC "priority_queue.cpp")
+add_library(push_relabel STATIC "push_relabel.cpp")
 add_library(quantile STATIC "quantile.cpp")
 add_library(queue STATIC "queue.cpp")
 add_library(quick_sort STATIC "quick_sort.cpp")
@@ -127,6 +128,7 @@ target_link_libraries(
     perfect_hashing
     prim
     priority_queue
+    push_relabel
     quantile
     queue
     quick_sort

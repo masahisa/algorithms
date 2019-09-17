@@ -57,6 +57,7 @@ add_executable(
     "test_perfect_hashing.cpp"
     "test_prim.cpp"
     "test_priority_queue.cpp"
+    "test_push_relabel.cpp"
     "test_quantile.cpp"
     "test_queue.cpp"
     "test_quick_sort.cpp"
@@ -128,6 +129,7 @@ target_link_libraries(
     perfect_hashing
     prim
     priority_queue
+    push_relabel
     quantile
     queue
     quick_sort

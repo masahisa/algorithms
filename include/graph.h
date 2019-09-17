@@ -21,6 +21,8 @@ struct graph_vertex{
     graph_vertex_color color;
     int d;
     int f;
+    int h;
+    int e;
     graph_vertex<T>* pi;
     int index;
     int key;
