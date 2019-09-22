@@ -3,6 +3,8 @@
 
 #include "graph.h"
 
+#include <list>
+
 template<typename T>
 void initialize_preflow(graph<T>& g, graph<T>& gf, graph_vertex<T>& s, graph_vertex<T>& t)
 {
@@ -105,6 +107,58 @@ void push_relabel(graph<T>& g, graph_vertex<T>& s, graph_vertex<T>& t)
         }
     }
     
+}
+
+template<typename T>
+void discharge(graph<T>& g, graph<T>& gf, graph_vertex<T>& u)
+{
+    unsigned int v = 0;
+    while(gf.vertices[u.index].e > 0){
+        if(gf.vertices[u.index].adjacency_list[v] == 0){
+            v++;
+            continue;
+        }
+        if(v == gf.vertices.size()){
+            relabel(g, gf, gf.vertices[u.index]);
+            v = 0;
+        }
+        else if(gf.vertices[u.index].e > 0
+            && gf.vertices[u.index].weight[v] > 0
+            && gf.vertices[u.index].h == gf.vertices[v].h + 1){
+            push(g, gf, gf.vertices[u.index], gf.vertices[v]);
+        }
+        else{
+            v++;
+        }
+    }
+}
+
+template<typename T>
+void relabel_to_front(graph<T>& g, graph_vertex<T>& s, graph_vertex<T>& t)
+{
+    graph<T> gf = g;
+    initialize_preflow(g, gf, s, t);
+
+    std::list<int> l;
+    for(unsigned int u = 0; u < g.vertices.size(); u++){
+        if(u == static_cast<unsigned int>(s.index) || u == static_cast<unsigned int>(t.index)){
+            continue;
+        }
+        l.push_back(u);
+    }
+
+    std::list<int>::iterator u = l.begin();
+    while(u != l.end()){
+        int old_height = gf.vertices[*u].h;
+        discharge(g, gf, gf.vertices[*u]);
+        if(gf.vertices[*u].h > old_height){
+            int u_index = *u;
+            l.erase(u);
+            l.push_front(u_index);
+            u = l.begin();
+        }
+        u++;
+    }
 }
 
 #endif // PUSH_RELABEL_H
