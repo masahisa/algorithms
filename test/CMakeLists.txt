@@ -28,6 +28,7 @@ add_executable(
     "test_deque.cpp"
     "test_dijkstra.cpp"
     "test_doubly_linked_list.cpp"
+    "test_fibonacci_heap.cpp"
     "test_fibonacci.cpp"
     "test_find_maximum_subarray.cpp"
     "test_find_sum_pair.cpp"

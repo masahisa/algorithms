@@ -21,6 +21,7 @@ IMPORT_TEST_GROUP(depth_first_search);
 IMPORT_TEST_GROUP(deque);
 IMPORT_TEST_GROUP(dijkstra);
 IMPORT_TEST_GROUP(doubly_linked_list);
+IMPORT_TEST_GROUP(fibonacci_heap);
 IMPORT_TEST_GROUP(fibonacci);
 IMPORT_TEST_GROUP(find_maximum_subarray);
 IMPORT_TEST_GROUP(find_sum_pair);

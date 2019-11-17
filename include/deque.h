@@ -8,7 +8,7 @@
  * @param head the head of the queue
  * @param tail the tail of the queue
  * @param size the size of array
- * @parram x the value to enqueue
+ * @param x the value to enqueue
  * @return when detected overflow, return error code INT32_MIN
  */
 int head_enqueue(int* a, int* head, int* tail, int size, int x);
@@ -20,7 +20,7 @@ int head_enqueue(int* a, int* head, int* tail, int size, int x);
  * @param head the head of the queue
  * @param tail the tail of the queue
  * @param size the size of array
- * @parram x the value to enqueue
+ * @param x the value to enqueue
  * @return when detected overflow, return error code INT32_MIN
  */
 int tail_enqueue(int* a, int* head, int* tail, int size, int x);
